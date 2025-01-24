@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Protfolio</title>
+    <title>Anshuman Acharya | Protfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -14,6 +14,7 @@
   <body>
     <header class="header">
       <a href="#" class="logo">Portfo<span>lio</span></a>
+      <!-- Hire Me Button -->
 
       <i class="bx bx-menu" id="menu-icon"></i>
 
@@ -66,7 +67,17 @@
             target="_blank"
             ><i class="bx bxl-linkedin"></i
           ></a>
+          <a href="https://github.com/anshux01" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
+
+        <a
+          href="mailto:anshuman.acharyaa@gmail.com?subject=Hire Me&body=Hi Anshuman, I would like to discuss an opportunity with you."
+          class="btn hire-me-btn"
+        >
+          Hire Me Now
+        </a>
         <a href="CV/Anshman_Acharya_cv.pdf" target="_blank" class="btn"
           >Download CV</a
         >
@@ -110,7 +121,7 @@
           growing as a developer.
         </p>
         <br />
-        <a href="#" class="btn">Read More</a>
+        <a href="about-details.html" class="btn">Read More</a>
       </div>
     </section>
 
@@ -147,10 +158,12 @@
           <i class="bx bxl-nodejs"></i>
           <h3>Backend Development</h3>
           <p>
-            I design and build robust backend systems using Node.js and
-            Express.js. My focus is on building secure, efficient, and scalable
-            server-side solutions that complement frontend development.
+            I specialize in designing and build robust backend systems using
+            Node.js and Express.js. My focus is on building secure, efficient,
+            and scalable server-side solutions that complement frontend
+            development.
           </p>
+          <br /><br />
           <a href="#" class="btn">Read More</a>
         </div>
 
@@ -258,51 +271,40 @@
 
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
-      <!-- <h4>let's work Together</h4>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
-        consequuntur quia repellendus accusantium maxime fuga facilis tenetur
-        aspernatur, voluptates deserunt iste suscipit voluptatem mollitia.
+      <p class="sub-heading">
+        I’d love to hear from you! Whether you want to hire me, collaborate, or
+        just say hi, feel free to reach out using the form below.
       </p>
-      <div class="contact-list">
-        <i class="bx bxs-send">anshuman.acharyaa@gmail.com</i>
-      </div>
-      <div class="contact-icons">
-        <a
-            href="https://www.facebook.com/anshuman.acharya.79462"
-            target="_blank"
-            ><i class="bx bxl-facebook-circle"></i
-          ></a>
-           <a href="https://x.com/AnshumanAc70238" target="_blank"
-            ><i class="bx bxl-twitter"></i
-          ></a> 
-          <a href="https://www.instagram.com/ans_hu_x/" target="_blank"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/anshuman-acharya-663865276/"
-            target="_blank"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-        </div>
-      </div> -->
 
-      <form action="#">
+      <form
+        action="https://formsubmit.co/anshuman.acharyaa@gmail.com"
+        method="POST"
+      >
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input
+            type="number"
+            name="phone"
+            placeholder="Mobile Number"
+            required
+          />
+          <input type="text" name="subject" placeholder="Email Subject" />
         </div>
         <textarea
-          name=""
-          id=""
+          name="message"
           cols="30"
           rows="10"
           placeholder="Your Message"
+          required
         ></textarea>
         <input type="submit" value="Send Message" class="btn" />
       </form>

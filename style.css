@@ -146,6 +146,8 @@ span {
   padding: 1rem 2.8rem;
   background: var(--main-color);
   border-radius: 4rem;
+  justify-content: space-between;
+
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
   color: var(--second-bg-color);
@@ -227,6 +229,13 @@ span {
   margin: 1rem 0 3rem;
 }
 
+.sub-heading {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 .portfolio {
   background: var(--second-bg-color);
 }
@@ -304,11 +313,19 @@ span {
   color: var(--second-bg-color);
 }
 
+/* Contact Section */
 .contact h2 {
   margin-bottom: 3rem;
 }
+
 .contact h4 {
   font-size: 2.2rem;
+}
+.contact .sub-heading {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 30px;
+  text-align: center;
 }
 .contact form {
   max-width: 70rem;
@@ -358,7 +375,6 @@ span {
 
 .footer-text p {
   font-size: 1.6rem;
-  
 }
 
 .footer-iconTop a {
