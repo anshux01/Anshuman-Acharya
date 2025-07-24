@@ -1,289 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Anshuman Acharya</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #181e29;
-      --panel-color: #22293a;
-      --accent: #0ef;
-      --light: #fff;
-      --heading: #b9eaff;
-      --subtle: #a2aec7;
-      --radius: 16px;
-    }
-    body {
-      font-family: "Poppins", 'Segoe UI', Arial, sans-serif;
-      background: var(--bg-color);
-      color: var(--light);
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 800px;
-      margin: 40px auto 0;
-      background: var(--panel-color);
-      border-radius: var(--radius);
-      padding: 2.5rem 2.5rem 2rem;
-      box-shadow: 0 8px 48px 0 rgba(0,0,0,0.23);
-      animation: fadeIn 0.8s cubic-bezier(.4,1.4,.4,1) 1;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anshuman Acharya | Protfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfo<span>lio</span></a>
+      <!-- Hire Me Button -->
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px);}
-      to { opacity: 1; transform: none;}
-    }
-    .avatar {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 2rem;
-    }
-    .avatar img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      border: 4px solid var(--accent);
-      box-shadow: 0 2px 14px rgba(0,255,255,0.08);
-      margin-bottom: 0.8rem;
-    }
-    .avatar h1 {
-      color: var(--heading);
-      font-size: 2.4rem;
-      margin-bottom: 0.3rem;
-      letter-spacing: 0.04em;
-      text-align: center;
-    }
-    .roles {
-      text-align: center;
-      color: var(--subtle);
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-    .tagline {
-      text-align: center;
-      font-size: 1.12rem;
-      color: #e5f8ff;
-      font-weight: 400;
-      background: rgba(0,255,255,0.07);
-      border-radius: var(--radius);
-      padding: 0.95rem 1.5rem 0.85rem;
-      margin-bottom: 2.2rem;
-      box-shadow: 0 2px 14px rgba(0,255,255,0.04);
-    }
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    section {
-      margin-bottom: 2.6rem;
-      background: rgba(34,41,58,0.98);
-      border-radius: var(--radius);
-      padding: 1.5rem 1.1rem 1.2rem 1.1rem;
-      box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.08);
-    }
-    section:last-child {
-      margin-bottom: 0;
-    }
-    h2 {
-      color: var(--accent);
-      margin-top: 0;
-      margin-bottom: 1.1rem;
-      font-size: 1.39rem;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      display: flex;
-      align-items: center;
-      gap: 0.70em;
-    }
-    h2 i {
-      color: var(--accent);
-      font-size: 1.32em;
-      vertical-align: middle;
-    }
-    .modern-list {
-      padding-left: 1.25em;
-      margin-bottom: 0.7em;
-      line-height: 1.8;
-    }
-    .modern-list li {
-      margin-bottom: 0.17em;
-      font-size: 1.08em;
-      color: var(--light);
-    }
-    .tech-tags {
-      display: flex; flex-wrap: wrap; gap: 0.7em 1em; margin: 1.1em 0 0.4em;
-    }
-    .tech-tag {
-      background: #112233;
-      border-radius: 18px;
-      color: var(--accent);
-      font-size: 1em;
-      padding: 0.28em 1.2em;
-      box-shadow: 0 1px 6px rgba(0,255,255,0.08);
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      margin-bottom: 0.32em;
-    }
-    .section-body {
-      font-size: 1.09rem;
-      color: #c2e4fa;
-      margin-bottom: 8px;
-    }
-    .section-highlight {
-      color: #e7feff;
-      font-size: 1.12rem;
-      background: rgba(0,255,255,0.06);
-      border-radius: 9px;
-      padding: 0.4em 0.8em;
-      margin-bottom: 0.7em;
-      display: inline-block;
-      font-style: italic;
-    }
-    .portfoliolink {
-      margin-top: 1.6rem;
-      display: flex;
-      justify-content: center;
-    }
-    .portfoliolink a {
-      text-decoration: none;
-      background: var(--accent);
-      color: var(--panel-color);
-      font-weight: 600;
-      font-size: 1em;
-      border-radius: 2rem;
-      padding: 0.75em 2.5em;
-      transition: background 0.27s;
-      box-shadow: 0 2px 13px 0 rgba(0,255,255,0.14);
-      letter-spacing: 0.03em;
-    }
-    .portfoliolink a:hover {
-      background: #09dade;
-      color: #fff;
-    }
-    .hashtags {
-      margin-top: 2em;
-      text-align: center;
-      color: var(--accent);
-      font-size: 1em;
-      font-weight: 500;
-      letter-spacing: 0.03em;
-    }
-    .hashtags span {
-      color: #64fff0;
-      background: #192e37;
-      border-radius: 7px;
-      padding: 0.24em 0.7em;
-      margin: 0 0.18em;
-      display: inline-block;
-    }
-    @media (max-width:600px) {
-      .container {
-        padding: 1.1rem 0.6rem 1rem;
-      }
-      section {
-        padding: 1.15rem 0.5rem 0.9rem 0.5rem;
-      }
-      .avatar img {
-        width: 80px; height: 80px;
-      }
-      .portfoliolink a {
-        font-size: 0.98em; padding: 0.7em 1.6em;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Header / Avatar -->
-    <div class="avatar">
-      <img src="img/Anshuman2.jpg" alt="Anshuman Acharya">
-      <h1>Anshuman Acharya</h1>
-      <div class="roles">Full-Stack Developer · Data Science Aspirant · Automation Enthusiast</div>
-    </div>
-    <div class="tagline">
-      🎓 After completing my B.Tech in Computer Science, I decided to deepen my practical skills and industry relevance by enrolling in the <strong>Professional Program in Data Science & AI</strong> at <b>@360DigiTMG</b>.<br>
-      <span style="color: var(--accent);">This hands-on journey empowers me to craft data-driven, automation-first solutions for real-world challenges.</span>
-    </div>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Anshuman Acharya</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          Welcome! I'm a passionate full-stack developer and aspiring data
+          scientist, focusing on open-source automation (Selenium, n8n) and
+          effective data workflows. Now upskilling with the
+          <strong>Data Science & AI program at 360DigiTMG</strong>, I create
+          robust solutions and share knowledge with the tech community.
+        </p>
 
-    <!-- Projects Section -->
-    <section>
-      <h2><i class="bx bx-bulb"></i> Highlight Projects & Experience</h2>
-      <div class="section-body">
-        <span class="section-highlight">
-          📈 This decision has been a game-changer!
-        </span>
+        <!-- A passionate software developer and data analyst with hands-on
+        experience in creating innovative solutions and collaborating on dynamic
+        projects. Seeking an opportunity to apply technical expertise and
+        contribute to impactful initiatives while advancing professional growth. -->
+        <!-- <p>
+          Take a look around to see some of my work, projects, and achievements.
+          Whether it's designing a user-friendly chat application, developing a
+          face detection system, or organizing esports events, I'm always
+          striving to push my limits and learn something new.
+        </p> -->
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/anshuman.acharya.79462"
+            target="_blank"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <!-- <a href="https://x.com/AnshumanAc70238" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a> -->
+          <a href="https://www.instagram.com/ans_hu_x/" target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/anshuman-acharya-663865276/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/anshux01" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+
+        <a
+          href="mailto:anshuman.acharyaa@gmail.com?subject=Hire Me&body=Hi Anshuman, I would like to discuss an opportunity with you."
+          class="btn hire-me-btn"
+        >
+          Hire Me Now
+        </a>
+        <a href="CV/Anshman_Acharya_cv.pdf" target="_blank" class="btn"
+          >Download CV</a
+        >
       </div>
-      <ul class="modern-list">
-        <li>🧠 <b>AI-powered Invoice Automation</b> (Python, Tesseract OCR) — Extract and log invoices with zero manual effort</li>
-        <li>📂 <b>Offline File Management System</b> — Google Drive-like file organization and retrieval (JS/CSS/HTML)</li>
-        <li>📊 <b>Power BI Dashboards</b> — Interactive reports and business intelligence from real-time data</li>
-        <li>📅 <b>AI Meeting Scheduler</b> — Automated meeting booking using Gmail & Google Calendar APIs</li>
+
+      <div class="home-img">
+        <img src="img/Anshuman.jpg" alt="Anshuman" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/Anshuman2.jpg" alt="Anshuman" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Full-Stack Developer & Aspiring Data Scientist</h3>
+        <p>
+          Hi! I’m <strong>Anshuman Acharya</strong>, committed to building
+          scalable, automation-driven web solutions. I'm currently enrolled in
+          the
+          <strong
+            >Professional Program in Data Science & AI at 360DigiTMG,
+            Hyderabad</strong
+          >. My passion is automating workflows (Selenium, n8n) and working on
+          open-source projects that bridge full-stack development and data
+          analytics. <br /><br />
+          Special thanks to all mentors and trainers at
+          <strong>@360DigiTMG</strong> for their invaluable guidance!
+        </p>
+        <a href="about-details.html" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="heading">💼 <span>Skills & Certifications</span></h2>
+      <ul class="skills-list">
+        <li>
+          <a href="https://www.python.org/doc/" target="_blank">Python</a>
+        </li>
+        <li>JavaScript (Node.js, Express.js)</li>
+        <li>MongoDB, MySQL (Advanced SQL, Optimization)</li>
+        <li>Power BI, Tesseract OCR</li>
+        <li>Selenium, n8n (Open-Source Automation)</li>
+        <li>UI/UX Design</li>
+      </ul>
+      <h3 class="heading">📜 Certifications</h3>
+      <ul class="skills-list">
+        <li>Data Science & AI (360DigiTMG)</li>
+        <li>Power BI</li>
+        <li>MySQL</li>
       </ul>
     </section>
 
-    <!-- Toolkit/Skills Section -->
-    <section>
-      <h2><i class="bx bx-wrench"></i> Toolbox & Expertise</h2>
-      <div class="tech-tags">
-        <div class="tech-tag">Python</div>
-        <div class="tech-tag">JavaScript</div>
-        <div class="tech-tag">Node.js</div>
-        <div class="tech-tag">Tesseract OCR</div>
-        <div class="tech-tag">Power BI</div>
-        <div class="tech-tag">MySQL</div>
-        <div class="tech-tag">SQL</div>
-        <div class="tech-tag">n8n</div>
-      </div>
-      <div class="section-body">
-        From web automation to advanced analytics, I leverage these tools to solve complex business and technical problems with simplicity and efficiency.
+    <section class="Services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <br />
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code"></i>
+          <h3>Web Development</h3>
+          <p>
+            I specialize in creating responsive and dynamic websites using the
+            latest technologies like HTML, CSS, JavaScript, and frameworks like
+            React.js. My work focuses on delivering user-friendly experiences
+            with scalable solutions.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxs-analyse"></i>
+          <h3>Data Analysis</h3>
+          <p>
+            With a strong foundation in Python libraries like Pandas, NumPy, and
+            Matplotlib, I excel in extracting insights from data. From data
+            cleaning to visualization, I help make informed decisions backed by
+            numbers.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxl-nodejs"></i>
+          <h3>Backend Development</h3>
+          <p>
+            I specialize in designing and build robust backend systems using
+            Node.js and Express.js. My focus is on building secure, efficient,
+            and scalable server-side solutions that complement frontend
+            development.
+          </p>
+          <br /><br />
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxs-brain"></i>
+          <h3>Machine Learning</h3>
+          <p>
+            I work on building intelligent systems using frameworks like
+            TensorFlow and Keras. From facial recognition systems to predictive
+            analytics, I have hands-on experience in designing and training
+            machine learning models.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxs-trophy"></i>
+          <h3>Esports Event Management</h3>
+          <p>
+            I have successfully organized and managed esports events, including
+            tournaments for games like BGMI. My expertise includes team
+            coordination, event planning, and delivering a seamless gaming
+            experience for participants.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section>
-      <h2><i class="bx bx-award"></i> Education & Certifications</h2>
-      <ul class="modern-list">
-        <li>B.Tech in Computer Science & IT, GITA Bhubaneswar</li>
-        <li>Professional Program in Data Science & AI (<b>360DigiTMG</b>)</li>
-        <li>Certifications: Power BI, MySQL, Data Science & AI</li>
-      </ul>
-    </section>
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">My <span>Latest Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="img/invoice-automation.jpg" alt="AI Invoice Automation" />
+          <div class="portfolio-layer">
+            <h4>AI-Powered Invoice Automation</h4>
+            <p>
+              Python • Tesseract OCR • Google Sheets<br />
+              Automated invoice extraction and seamless accounting workflow.<br />
+              <a
+                href="https://github.com/anshux01/invoice-automation"
+                target="_blank"
+                >View Code</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="img/portfolio_ndrive.jpg" alt="N Drive Project" />
+          <div class="portfolio-layer">
+            <h4>N Drive</h4>
+            <p>
+              Developed an offline storage web-based application during my
+              internship at NALCO, optimizing local file management systems with
+              features like file upload, organization, and retrieval.
+            </p>
+            <a href="#"><i class="bx bxs-cloud-upload"></i></a>
+          </div>
+        </div>
 
-    <!-- Impact Section -->
-    <section>
-      <h2><i class="bx bx-rocket"></i> My Approach</h2>
-      <div class="section-body">
-        <span class="section-highlight">
-          My journey has taught me to design for real impacts — bridging development and data science with automation, intuitive UI, & robust databases.
-        </span>
-        <br>
-        I’m constantly seeking opportunities to work on innovative, outcome-driven projects and contribute to the open-source community. Grateful to my mentors at <b>@360DigiTMG</b> for their ongoing support!
+        <div class="portfolio-box">
+          <img
+            src="img/Chat Application project.png"
+            alt="Chat Application Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Chat Application</h4>
+            <p>
+              Real-time chat application using the MERN stack and Socket.IO.
+              Features live updates, group messaging, and user authentication.
+            </p>
+            <a href="#"><i class="bx bx-code-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="img/face detection system project.png"
+            alt="Face Detection System Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Face Detection System</h4>
+            <p>
+              Built using Python, TensorFlow, and OpenCV for security
+              applications with advanced image processing techniques.
+            </p>
+            <a href="#"><i class="bx bxs-face"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="img/Bus Ticket Booking System project.png"
+            alt="Bus Ticket Booking System Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Bus Ticket Booking System</h4>
+            <p>
+              Developed a Java-based GUI application with MySQL integration,
+              enabling seamless ticket booking and transaction processing.
+            </p>
+            <a href="#"><i class="bx bx-bus"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="img/quiz website project.png" alt="Quiz Website Project" />
+          <div class="portfolio-layer">
+            <h4>Quiz Website</h4>
+            <p>
+              A dynamic quiz platform built with HTML, CSS, and JavaScript,
+              featuring interactive and engaging user experiences.
+            </p>
+            <a href="#"><i class="bx bxs-graduation"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Call To Action / Portfolio Link -->
-    <div class="portfoliolink">
-      <a href="index.html"><i class="bx bx-left-arrow-alt"></i> Back to Portfolio</a>
-    </div>
-    <div class="portfoliolink" style="margin-top:1.25em;">
-      <a href="https://anshux01.github.io/Portfolio" target="_blank"><i class="bx bx-link-external"></i> View Live Portfolio</a>
-    </div>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
 
-    <!-- Hashtags -->
-    <div class="hashtags">
-      <span>#datascience</span>
-      <span>#portfolio</span>
-      <span>#python</span>
-      <span>#powerbi</span>
-      <span>#webdevelopment</span>
-      <span>#360digitmg</span>
-      <span>#fullstackdeveloper</span>
-      <span>#projects</span>
-      <span>#resume</span>
-    </div>
-  </div>
-</body>
+      <p class="sub-heading">
+        I’d love to hear from you! Whether you want to hire me, collaborate, or
+        just say hi, feel free to reach out using the form below.
+      </p>
+
+      <form
+        action="https://formsubmit.co/anshuman.acharyaa@gmail.com"
+        method="POST"
+      >
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="number"
+            name="phone"
+            placeholder="Mobile Number"
+            required
+          />
+          <input type="text" name="subject" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Anshuman Acharya | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+  </body>
 </html>
