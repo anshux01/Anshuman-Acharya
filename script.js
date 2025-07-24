@@ -1,57 +1,47 @@
-let menuIcon = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle("bx-x");
-  navbar.classList.toggle("active");
+/* Burger */
+const menu = document.querySelector("#menu-icon"),
+  nav = document.querySelector(".navbar");
+menu.onclick = () => {
+  menu.classList.toggle("bx-x");
+  nav.classList.toggle("active");
 };
 
-let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll("header nav a");
-
-window.onscroll = () => {
+/* Active nav on scroll */
+const sections = document.querySelectorAll("section"),
+  links = document.querySelectorAll(".navbar a");
+window.addEventListener("scroll", () => {
+  const top = scrollY;
   sections.forEach((sec) => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
-
-    if (top >= offset && top < offset + height) {
-      navLinks.forEach((links) => {
-        links.classList.remove("active");
-        document
-          .querySelector("header nav  a[href*=" + id + "]")
-          .classList.add("active");
-      });
+    const off = sec.offsetTop - 150,
+      h = sec.offsetHeight,
+      id = sec.getAttribute("id");
+    if (top >= off && top < off + h) {
+      links.forEach((l) => l.classList.remove("active"));
+      document
+        .querySelector(".navbar a[href*=" + id + "]")
+        .classList.add("active");
     }
   });
-
-  let header = document.querySelector("header");
-
-  header.classList.toggle("sticky", window.scrollY > 100);
-
-  menuIcon.classList.remove("bx-x");
-  navbar.classList.remove("active");
-};
-
-ScrollReveal({
-  // reset: true,
-  distance: "80px",
-  duration: 2000,
-  delay: 200,
+  menu.classList.remove("bx-x");
+  nav.classList.remove("active");
 });
 
-ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-ScrollReveal().reveal(
-  ".home-img, .services-container, .portfolio-box, .contact form",
-  { origin: "bottom" }
-);
-ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
-ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+/* ScrollReveal */
+ScrollReveal({ distance: "60px", duration: 1200, delay: 150, reset: true });
+ScrollReveal().reveal(".home-col,.heading", { origin: "top" });
+ScrollReveal().reveal(".img-wrap img,.project-card,.contact-form", {
+  origin: "bottom",
+});
 
-const typed = new Typed(".multiple-text", {
-  strings: ["Frontend Developer", "Software Engineering", "Data Analyst"],
+/* Typed */
+new Typed(".typed-role", {
+  strings: [
+    "Full-Stack Developer",
+    "Data Scientist in training",
+    "Automation Enthusiast",
+  ],
   typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 1000,
+  backSpeed: 80,
+  backDelay: 1200,
   loop: true,
 });

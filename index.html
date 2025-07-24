@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anshuman Acharya | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
@@ -12,319 +11,878 @@
     />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
-      <a href="#" class="logo">Portfo<span>lio</span></a>
-      <!-- Hire Me Button -->
-
+      <a href="#" class="logo">Anshuman <span> Acharya</span></a>
       <i class="bx bx-menu" id="menu-icon"></i>
-
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Anshuman Acharya</h1>
-        <h3>And I'm a <span class="multiple-text"></span></h3>
-        <p>
-          Welcome to my portfolio! I'm a passionate software developer and data
-          analyst, dedicated to building innovative solutions and solving
-          real-world problems. With experience in full-stack development,
-          machine learning, and project management, I enjoy creating impactful
-          projects and collaborating with like-minded individuals.
-        </p>
-<!--        #<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="anshuman-a-acharya" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/anshuman-a-acharya?trk=profile-badge">Anshuman Acharya</a></div> -->
-              
-        <!-- A passionate software developer and data analyst with hands-on
-        experience in creating innovative solutions and collaborating on dynamic
-        projects. Seeking an opportunity to apply technical expertise and
-        contribute to impactful initiatives while advancing professional growth. -->
-        <!-- <p>
-          Take a look around to see some of my work, projects, and achievements.
-          Whether it's designing a user-friendly chat application, developing a
-          face detection system, or organizing esports events, I'm always
-          striving to push my limits and learn something new.
+    <!-- HOME SECTION - Properly Centered -->
+    <section id="home" class="home">
+      <div class="home-container">
+        <div class="home-content">
+          <div class="intro-text">
+            <h3>Hello, I'm</h3>
+            <h1>Anshuman Acharya</h1>
+            <div class="typing-container">
+              <h3>I'm a <span class="typed-role"></span></h3>
+            </div>
+          </div>
+
+          <p class="home-description">
+            Full-Stack Developer and Data Science learner passionate about
+            automation, open-source solutions, and building scalable web
+            applications. Currently advancing through the
+            <strong
+              >Professional Program in Data Science & AI at 360DigiTMG</strong
+            >.
+          </p>
+
+          <!-- Achievement Stats -->
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Years Exp</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Certificates</div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="home-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <i class="bx bx-message-square-dots"></i>
+              <span>Let's Connect</span>
+            </a>
+            <a
+              href="CV/Anshman_Acharya_cv.pdf"
+              target="_blank"
+              class="btn btn-secondary"
+            >
+              <i class="bx bx-download"></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-media">
+            <a href="mailto:anshuman.acharyaa@gmail.com" class="social-link">
+              <i class="bx bx-envelope"></i>
+            </a>
+            <a
+              href="https://github.com/anshux01"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/anshuman-a-acharya/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/ans_hu_x/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a
+              href="https://wa.me/yourphonenumber"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="bx bxl-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Image with Animation -->
+        <div class="home-image">
+          <div class="image-container">
+            <img
+              src="img/Anshuman.jpg"
+              alt="Anshuman Acharya"
+              class="profile-img"
+            />
+            <div class="image-decorations">
+              <div class="decoration decoration-1"></div>
+              <div class="decoration decoration-2"></div>
+              <div class="decoration decoration-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="section-container">
+        <div class="about-wrapper">
+          <div class="about-image">
+            <img src="img/Anshuman2.jpg" alt="Anshuman Acharya" />
+            <div class="experience-badge">
+              <span class="badge-number">3+</span>
+              <span class="badge-text">Years<br />Experience</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <p class="about-description">
+              B.Tech Computer Science graduate from GITA, Bhubaneswar, now
+              enhancing my expertise through the
+              <strong
+                >Professional Program in Data Science & AI at 360DigiTMG</strong
+              >. I specialize in building automation-driven solutions that
+              combine elegant UI/UX with robust backend systems.
+            </p>
+
+            <div class="expertise-grid">
+              <div class="expertise-item">
+                <i class="bx bx-brain"></i>
+                <span>AI Invoice Automation</span>
+              </div>
+              <div class="expertise-item">
+                <i class="bx bx-folder"></i>
+                <span>File Management Systems</span>
+              </div>
+              <div class="expertise-item">
+                <i class="bx bx-bar-chart"></i>
+                <span>Power BI Dashboards</span>
+              </div>
+              <div class="expertise-item">
+                <i class="bx bx-calendar"></i>
+                <span>Meeting Scheduler Automation</span>
+              </div>
+            </div>
+
+            <a href="about-details.html" class="btn btn-primary"
+              >Read More About Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+      <div class="section-container">
+        <h2 class="section-title center">
+          Skills & <span>Certifications</span>
+        </h2>
+
+        <!-- Technical Skills -->
+        <div class="skills-section">
+          <h3 class="subsection-title">Technical Expertise</h3>
+          <div class="skills-grid">
+            <a
+              href="https://docs.python.org/3/"
+              target="_blank"
+              class="skill-card"
+            >
+              <div class="skill-icon">
+                <i class="bx bxl-python"></i>
+              </div>
+              <span class="skill-name">Python</span>
+              <div class="skill-level advanced"></div>
+            </a>
+            <a
+              href="https://developer.mozilla.org/docs/Web/JavaScript"
+              target="_blank"
+              class="skill-card"
+            >
+              <div class="skill-icon">
+                <i class="bx bxl-javascript"></i>
+              </div>
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-level advanced"></div>
+            </a>
+            <a
+              href="https://nodejs.org/en/docs/"
+              target="_blank"
+              class="skill-card"
+            >
+              <div class="skill-icon">
+                <i class="bx bxl-nodejs"></i>
+              </div>
+              <span class="skill-name">Node.js</span>
+              <div class="skill-level advanced"></div>
+            </a>
+            <a
+              href="https://expressjs.com/en/4x/api.html"
+              target="_blank"
+              class="skill-card"
+            >
+              <div class="skill-icon">
+                <i class="bx bx-server"></i>
+              </div>
+              <span class="skill-name">Express.js</span>
+              <div class="skill-level intermediate"></div>
+            </a>
+            <a
+              href="https://docs.mongodb.com/"
+              target="_blank"
+              class="skill-card"
+            >
+              <div class="skill-icon">
+                <i class="bx bxl-mongodb"></i>
+              </div>
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-level advanced"></div>
+            </a>
+            <a
+              href="https://dev.mysql.com/doc/"
+              target="_blank"
+              class="skill-card"
+            >
+              <div class="skill-icon">
+                <i class="bx bx-data"></i>
+              </div>
+              <span class="skill-name">MySQL</span>
+              <div class="skill-level advanced"></div>
+            </a>
+            <a
+              href="https://docs.microsoft.com/power-bi"
+              target="_blank"
+              class="skill-card"
+            >
+              <div class="skill-icon">
+                <i class="bx bx-bar-chart"></i>
+              </div>
+              <span class="skill-name">Power BI</span>
+              <div class="skill-level intermediate"></div>
+            </a>
+            <a href="https://docs.n8n.io/" target="_blank" class="skill-card">
+              <div class="skill-icon">
+                <i class="bx bx-bot"></i>
+              </div>
+              <span class="skill-name">n8n</span>
+              <div class="skill-level intermediate"></div>
+            </a>
+            <a
+              href="https://selenium-python.readthedocs.io/"
+              target="_blank"
+              class="skill-card"
+            >
+              <div class="skill-icon">
+                <i class="bx bx-test-tube"></i>
+              </div>
+              <span class="skill-name">Selenium</span>
+              <div class="skill-level intermediate"></div>
+            </a>
+          </div>
+        </div>
+
+        <!------- Certfications ----------------------->
+        <h3 class="subsection-title">Professional Certificates</h3>
+
+        <div class="certifications-grid">
+          <!-- 1. Basic SQL Course -->
+          <a
+            href="img/certificates/Certificate (1).pdf"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon"><i class="bx bxs-award"></i></div>
+            <div class="cert-content">
+              <h4>Basic SQL Course</h4>
+              <p>360DigiTMG  |  Jul 2025</p>
+              <span class="cert-skill">SQL · MySQL · MS SQL Server</span>
+            </div>
+          </a>
+
+          <!-- 4. Python Programming Certification -->
+          <a
+            href="img/certificates/Certificate.pdf"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon"><i class="bx bxs-award"></i></div>
+            <div class="cert-content">
+              <h4>Python Programming</h4>
+              <p>360DigiTMG  |  Jun 2025</p>
+              <span class="cert-skill">OOP · Jupyter · Python</span>
+            </div>
+          </a>
+          <!-- 2. Python (Basic)  —  HackerRank -->
+          <a
+            href="img/certificates/python-basic-hackerrank.pdf"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon"><i class="bx bxs-award"></i></div>
+            <div class="cert-content">
+              <h4>Python (Basic)</h4>
+              <p>HackerRank  |  Jul 2025</p>
+              <span class="cert-skill">Python Programming</span>
+            </div>
+          </a>
+
+          <!-- 3. SQL (Basic)  —  HackerRank -->
+          <a
+            href="img/certificates/sql-basic-hackerrank.pdf"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon"><i class="bx bxs-award"></i></div>
+            <div class="cert-content">
+              <h4>SQL (Basic)</h4>
+              <p>HackerRank  |  Jul 2025</p>
+              <span class="cert-skill">SQL Fundamentals</span>
+            </div>
+          </a>
+          <!-- 5. Database & SQL for Data Science -->
+          <a
+            href="img/certificates/db-sql-ibm.pdf"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon"><i class="bx bxs-award"></i></div>
+            <div class="cert-content">
+              <h4>DB & SQL for Data Science</h4>
+              <p>IBM-Coursera  |  Jan 2025</p>
+              <span class="cert-skill">SQL · Relational DB · Python</span>
+            </div>
+          </a>
+
+          <!-- 6. Data Science with Python -->
+          <!-- <a
+            href="img/certificates/ds-python-nptel.pdf"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon"><i class="bx bxs-award"></i></div>
+            <div class="cert-content">
+              <h4>Data Science with Python</h4>
+              <p>IBM-Coursera | NPTEL  |  May 2024</p>
+              <span class="cert-skill">Data Science · Python</span>
+            </div>
+          </a> -->
+
+          <!-- 7. Intro to Front-End Dev -->
+          <a
+            href="img/certificates/frontend-meta.pdf"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon"><i class="bx bxs-award"></i></div>
+            <div class="cert-content">
+              <h4>Intro to Front-End development</h4>
+              <p>Meta-Coursera  |  Jan 2025</p>
+              <span class="cert-skill">HTML · CSS · JavaScript</span>
+            </div>
+          </a>
+
+          <!-- 8. Neural Networks & Deep Learning -->
+          <a
+            href="img/certificates/nn-dl-coursera.pdf"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon"><i class="bx bxs-award"></i></div>
+            <div class="cert-content">
+              <h4>Fundamentals of Gen AI</h4>
+              <p>Amazon Web Service  |  Jul 2024</p>
+              <span class="cert-skill">Neural Nets · Deep Learning</span>
+            </div>
+          </a>
+
+          <!-- 9. ML: Foundations & Design -->
+          <!-- <a
+            href="img/certificates/ml-foundations-coursera.pdf"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon"><i class="bx bxs-award"></i></div>
+            <div class="cert-content">
+              <h4>ML: Foundations & Design</h4>
+              <p>Coursera  |  Jan 2024</p>
+              <span class="cert-skill">Machine Learning · AI Design</span>
+            </div>
+          </a> -->
+
+          <!-- 10. Google Cloud Computing Foundations -->
+          <a
+            href="img/certificates/Google Cloud Computing Foundations.pdf"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon"><i class="bx bxs-award"></i></div>
+            <div class="cert-content">
+              <h4>GCP Computing Foundations</h4>
+              <p>Google Cloud - NPTEL  |  2024</p>
+              <span class="cert-skill">Google Cloud Platform</span>
+            </div>
+          </a>
+        </div>
+        <!------- End Certificates ----------------------->
+      </div>
+    </section>
+    <!-- ░░ SERVICES ░░ -->
+    <!-- <section id="services" class="services">
+      <div class="section-container">
+        <h2 class="section-title center">My <span>Services</span></h2>
+        <p class="section-subtitle">
+          End-to-end development and data solutions tailored to your business
+          needs
         </p> -->
-        <div class="social-media">
-          <a
-            href="https://www.facebook.com/anshuman.acharya.79462"
-            target="_blank"
-            ><i class="bx bxl-facebook-circle"></i
-          ></a>
-          <!-- <a href="https://x.com/AnshumanAc70238" target="_blank"
-            ><i class="bx bxl-twitter"></i
-          ></a> -->
-          <a href="https://www.instagram.com/ans_hu_x/" target="_blank"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/anshuman-acharya-663865276/"
-            target="_blank"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/anshux01" target="_blank"
-            ><i class="bx bxl-github"></i
-          ></a>
+
+    <!-- <div class="service-grid">
+           Service 1 
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bx bx-code-alt"></i>
+            </div>
+            <h3 class="service-title">Full-Stack Development</h3>
+            <p class="service-desc">
+              Responsive, performant web apps built with React, Node, Express &
+              Mongo/MySQL.
+            </p>
+          </div> -->
+
+    <!-- Service 2 -->
+    <!-- <div class="service-card">
+            <div class="service-icon">
+              <i class="bx bx-bot"></i>
+            </div>
+            <h3 class="service-title">Automation & Integrations</h3>
+            <p class="service-desc">
+              Workflow automation with Python, n8n & Selenium to eliminate
+              manual tasks.
+            </p>
+          </div> -->
+
+    <!-- Service 3 -->
+    <!-- <div class="service-card">
+            <div class="service-icon">
+              <i class="bx bx-bar-chart-alt-2"></i>
+            </div>
+            <h3 class="service-title">Data Analytics & BI</h3>
+            <p class="service-desc">
+              Interactive dashboards and data models using Power BI, SQL &
+              Python.
+            </p> -->
+    <!-- </div> -->
+
+    <!-- Service 4 -->
+    <!-- <div class="service-card">
+            <div class="service-icon">
+              <i class="bx bx-brain"></i>
+            </div>
+            <h3 class="service-title">AI & ML Prototyping</h3>
+            <p class="service-desc">
+              Rapid POC models for classification, NLP and computer-vision
+              use-cases.
+            </p>
+          </div>
         </div>
-
-        <a
-          href="mailto:anshuman.acharyaa@gmail.com?subject=Hire Me&body=Hi Anshuman, I would like to discuss an opportunity with you."
-          class="btn hire-me-btn"
-        >
-          Hire Me Now
-        </a>
-        <a href="CV/Anshman_Acharya_cv.pdf" target="_blank" class="btn"
-          >Download CV</a
-        >
       </div>
+    </section> -->
 
-      <div class="home-img">
-        <img src="img/Anshuman.jpg" alt="Anshuman" />
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="img/Anshuman2.jpg" alt="Anshuman" />
-      </div>
-
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Frontend Developer & Aspiring Full-Stack Engineer!</h3>
-        <br /><br />
-        <p>
-          Hi! I’m <strong>Anshuman Acharya</strong>, a passionate software
-          developer and data enthusiast with a solid foundation in Computer
-          Science and Information Technology. Currently, I’m pursuing my B.Tech
-          at Gandhi Institute for Technological Advancements (GITA),
-          Bhubaneswar, where I’ve been refining my skills in programming, web
-          development, and data analysis.
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+      <div class="section-container">
+        <h2 class="section-title center">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">
+          Some of my recent work that showcases my skills and expertise
         </p>
-        <br />
-        <p>
-          I thrive on creating innovative and meaningful solutions. My portfolio
-          includes exciting projects like a real-time chat application using the
-          MERN stack, a Java-based bus ticket booking system, and an AI-powered
-          face detection system. These experiences have sharpened my technical
-          expertise, problem-solving abilities, and teamwork skills.
+
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-image">
+              <img
+                src="img/invoice-automation.jpg"
+                alt="AI Invoice Automation"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/anshux01/AI-Invoice-Automation"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                  <a href="#" target="_blank" class="project-link">
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">AI Automation</div>
+              <h3>AI-Powered Invoice Automation</h3>
+              <p>
+                Advanced OCR-based system for automated invoice processing with
+                99% accuracy rate using Python and machine learning.
+              </p>
+              <div class="tech-stack">
+                <span>Python</span>
+                <span>Tesseract OCR</span>
+                <span>Google Sheets API</span>
+                <span>ML</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/portfolio_ndrive.jpg" alt="N Drive" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/anshux01/N-Drive"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                  <a
+                    href="https://anshux01.github.io/N-Drive/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Web Application</div>
+              <h3>N Drive - File Manager</h3>
+              <p>
+                Google Drive-inspired offline file management system with
+                intuitive UI and comprehensive file operations.
+              </p>
+              <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="img/Chat Application project.png"
+                alt="Chat Application"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/anshux01/Chat-Application"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Full-Stack</div>
+              <h3>Real-time Chat Application</h3>
+              <p>
+                Modern chat application with real-time messaging, user
+                authentication, and group chat functionality.
+              </p>
+              <div class="tech-stack">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Socket.IO</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="img/face detection system project.png"
+                alt="Face Detection"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/anshux01/Face-Detection-System"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">AI/ML</div>
+              <h3>AI Face Detection System</h3>
+              <p>
+                Intelligent face detection and recognition system for security
+                applications using computer vision.
+              </p>
+              <div class="tech-stack">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>TensorFlow</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/quiz website project.png" alt="Quiz Website" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/anshux01/Quiz-Website"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                  <a
+                    href="https://anshux01.github.io/Quiz-Website/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Interactive App</div>
+              <h3>Interactive Quiz Platform</h3>
+              <p>
+                Dynamic quiz application with score tracking, timer
+                functionality, and local storage integration.
+              </p>
+              <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="img/Bus Ticket Booking System project.png"
+                alt="Bus Booking"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/anshux01/Bus-Ticket-Booking"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Desktop App</div>
+              <h3>Bus Ticket Booking System</h3>
+              <p>
+                Comprehensive booking system with payment processing and booking
+                management features.
+              </p>
+              <div class="tech-stack">
+                <span>Java</span>
+                <span>MySQL</span>
+                <span>Swing GUI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION - Enhanced -->
+    <section id="contact" class="contact">
+      <div class="section-container">
+        <h2 class="section-title center">Let's Work <span>Together</span></h2>
+        <p class="section-subtitle">
+          Ready to bring your ideas to life? Let's connect and discuss your
+          project!
         </p>
-        <br />
-        <p>
-          Outside of coding, I enjoy organizing esports events, taking on
-          leadership roles, and exploring creative challenges. My ultimate goal
-          is to contribute to impactful projects while continuously learning and
-          growing as a developer.
-        </p>
-        <br />
-        <a href="about-details.html" class="btn">Read More</a>
-      </div>
-    </section>
 
-    <section class="Services" id="services">
-      <h2 class="heading">My <span>Services</span></h2>
-      <br />
+        <div class="contact-wrapper">
+          <!-- Contact Form -->
+          <div class="contact-form-section">
+            <div class="form-header">
+              <h3>Send Message</h3>
+              <p>
+                Fill out the form below and I'll get back to you as soon as
+                possible.
+              </p>
+            </div>
 
-      <div class="services-container">
-        <div class="services-box">
-          <i class="bx bx-code"></i>
-          <h3>Web Development</h3>
-          <p>
-            I specialize in creating responsive and dynamic websites using the
-            latest technologies like HTML, CSS, JavaScript, and frameworks like
-            React.js. My work focuses on delivering user-friendly experiences
-            with scalable solutions.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxs-analyse"></i>
-          <h3>Data Analysis</h3>
-          <p>
-            With a strong foundation in Python libraries like Pandas, NumPy, and
-            Matplotlib, I excel in extracting insights from data. From data
-            cleaning to visualization, I help make informed decisions backed by
-            numbers.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxl-nodejs"></i>
-          <h3>Backend Development</h3>
-          <p>
-            I specialize in designing and build robust backend systems using
-            Node.js and Express.js. My focus is on building secure, efficient,
-            and scalable server-side solutions that complement frontend
-            development.
-          </p>
-          <br /><br />
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxs-brain"></i>
-          <h3>Machine Learning</h3>
-          <p>
-            I work on building intelligent systems using frameworks like
-            TensorFlow and Keras. From facial recognition systems to predictive
-            analytics, I have hands-on experience in designing and training
-            machine learning models.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxs-trophy"></i>
-          <h3>Esports Event Management</h3>
-          <p>
-            I have successfully organized and managed esports events, including
-            tournaments for games like BGMI. My expertise includes team
-            coordination, event planning, and delivering a seamless gaming
-            experience for participants.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">My <span>Latest Projects</span></h2>
-
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="img/portfolio_ndrive.jpg" alt="N Drive Project" />
-          <div class="portfolio-layer">
-            <h4>N Drive</h4>
-            <p>
-              Developed an offline storage web-based application during my
-              internship at NALCO, optimizing local file management systems with
-              features like file upload, organization, and retrieval.
-            </p>
-            <a href="#"><i class="bx bxs-cloud-upload"></i></a>
+            <form
+              action="https://formsubmit.co/anshuman.acharyaa@gmail.com"
+              method="POST"
+              class="contact-form"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary full-width">
+                <i class="bx bx-send"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
           </div>
-        </div>
 
-        <div class="portfolio-box">
-          <img
-            src="img/Chat Application project.png"
-            alt="Chat Application Project"
-          />
-          <div class="portfolio-layer">
-            <h4>Chat Application</h4>
-            <p>
-              Real-time chat application using the MERN stack and Socket.IO.
-              Features live updates, group messaging, and user authentication.
-            </p>
-            <a href="#"><i class="bx bx-code-alt"></i></a>
-          </div>
-        </div>
+          <!-- Contact Info -->
+          <div class="contact-info-section">
+            <div class="contact-info">
+              <h3>Get In Touch</h3>
+              <p>
+                I'm always interested in hearing about new opportunities and
+                exciting projects.
+              </p>
 
-        <div class="portfolio-box">
-          <img
-            src="img/face detection system project.png"
-            alt="Face Detection System Project"
-          />
-          <div class="portfolio-layer">
-            <h4>Face Detection System</h4>
-            <p>
-              Built using Python, TensorFlow, and OpenCV for security
-              applications with advanced image processing techniques.
-            </p>
-            <a href="#"><i class="bx bxs-face"></i></a>
-          </div>
-        </div>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="bx bx-envelope"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Email</h4>
+                    <p>anshuman.acharyaa@gmail.com</p>
+                  </div>
+                </div>
 
-        <div class="portfolio-box">
-          <img
-            src="img/Bus Ticket Booking System project.png"
-            alt="Bus Ticket Booking System Project"
-          />
-          <div class="portfolio-layer">
-            <h4>Bus Ticket Booking System</h4>
-            <p>
-              Developed a Java-based GUI application with MySQL integration,
-              enabling seamless ticket booking and transaction processing.
-            </p>
-            <a href="#"><i class="bx bx-bus"></i></a>
-          </div>
-        </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="bx bx-phone"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Phone</h4>
+                    <p>+91 XXXXXXXXXX</p>
+                  </div>
+                </div>
 
-        <div class="portfolio-box">
-          <img src="img/quiz website project.png" alt="Quiz Website Project" />
-          <div class="portfolio-layer">
-            <h4>Quiz Website</h4>
-            <p>
-              A dynamic quiz platform built with HTML, CSS, and JavaScript,
-              featuring interactive and engaging user experiences.
-            </p>
-            <a href="#"><i class="bx bxs-graduation"></i></a>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="bx bx-location-plus"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Location</h4>
+                    <p>Bhubaneswar, India</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a
+                  href="mailto:anshuman.acharyaa@gmail.com"
+                  class="social-link"
+                >
+                  <i class="bx bx-envelope"></i>
+                </a>
+                <a
+                  href="https://github.com/anshux01"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/anshuman-a-acharya/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/ans_hu_x/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="bx bxl-instagram"></i>
+                </a>
+                <a
+                  href="https://wa.me/yourphonenumber"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="bx bxl-whatsapp"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-
-      <p class="sub-heading">
-        I’d love to hear from you! Whether you want to hire me, collaborate, or
-        just say hi, feel free to reach out using the form below.
-      </p>
-
-      <form
-        action="https://formsubmit.co/anshuman.acharyaa@gmail.com"
-        method="POST"
-      >
-        <div class="input-box">
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            name="phone"
-            placeholder="Mobile Number"
-            required
-          />
-          <input type="text" name="subject" placeholder="Email Subject" />
-        </div>
-        <textarea
-          name="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
-    </section>
-
+    <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2023 by Anshuman Acharya | All Rights Reserved.</p>
-      </div>
-
-      <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Anshuman Acharya</h3>
+            <p>Full-Stack Developer & Data Science Enthusiast</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Anshuman Acharya. All rights reserved.</p>
+          <a href="#home" class="back-to-top">
+            <i class="bx bx-up-arrow-alt"></i>
+          </a>
+        </div>
       </div>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
     <script src="script.js"></script>
   </body>
 </html>
