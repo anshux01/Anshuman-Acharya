@@ -1,218 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Anshuman Acharya</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
-      }
-      .about-img img {
-        width: 25vw;
-        max-width: 250px;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Anshuman Acharya</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #181e29;
+      --panel-color: #22293a;
+      --accent: #0ef;
+      --light: #fff;
+      --heading: #b9eaff;
+      --subtle: #a2aec7;
+      --radius: 16px;
+    }
+    body {
+      font-family: "Poppins", 'Segoe UI', Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--light);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto 0;
+      background: var(--panel-color);
+      border-radius: var(--radius);
+      padding: 2.5rem 2.5rem 2rem;
+      box-shadow: 0 8px 48px 0 rgba(0,0,0,0.23);
+      animation: fadeIn 0.8s cubic-bezier(.4,1.4,.4,1) 1;
+    }
 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin-bottom: 1.5rem;
-      }
-      h1,
-      h2 {
-        color: #444;
-      }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: none;}
+    }
+    .avatar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .avatar img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      box-shadow: 0 2px 14px rgba(0,255,255,0.08);
+      margin-bottom: 0.8rem;
+    }
+    .avatar h1 {
+      color: var(--heading);
+      font-size: 2.4rem;
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.04em;
+      text-align: center;
+    }
+    .roles {
+      text-align: center;
+      color: var(--subtle);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
 
-      h1 {
-        text-align: center;
-        font-size: 3rem;
-        margin: 2rem 0;
-      }
+    .tagline {
+      text-align: center;
+      font-size: 1.12rem;
+      color: #e5f8ff;
+      font-weight: 400;
+      background: rgba(0,255,255,0.07);
+      border-radius: var(--radius);
+      padding: 0.95rem 1.5rem 0.85rem;
+      margin-bottom: 2.2rem;
+      box-shadow: 0 2px 14px rgba(0,255,255,0.04);
+    }
 
+    section {
+      margin-bottom: 2.6rem;
+      background: rgba(34,41,58,0.98);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.1rem 1.2rem 1.1rem;
+      box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.08);
+    }
+    section:last-child {
+      margin-bottom: 0;
+    }
+    h2 {
+      color: var(--accent);
+      margin-top: 0;
+      margin-bottom: 1.1rem;
+      font-size: 1.39rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      display: flex;
+      align-items: center;
+      gap: 0.70em;
+    }
+    h2 i {
+      color: var(--accent);
+      font-size: 1.32em;
+      vertical-align: middle;
+    }
+    .modern-list {
+      padding-left: 1.25em;
+      margin-bottom: 0.7em;
+      line-height: 1.8;
+    }
+    .modern-list li {
+      margin-bottom: 0.17em;
+      font-size: 1.08em;
+      color: var(--light);
+    }
+    .tech-tags {
+      display: flex; flex-wrap: wrap; gap: 0.7em 1em; margin: 1.1em 0 0.4em;
+    }
+    .tech-tag {
+      background: #112233;
+      border-radius: 18px;
+      color: var(--accent);
+      font-size: 1em;
+      padding: 0.28em 1.2em;
+      box-shadow: 0 1px 6px rgba(0,255,255,0.08);
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.32em;
+    }
+    .section-body {
+      font-size: 1.09rem;
+      color: #c2e4fa;
+      margin-bottom: 8px;
+    }
+    .section-highlight {
+      color: #e7feff;
+      font-size: 1.12rem;
+      background: rgba(0,255,255,0.06);
+      border-radius: 9px;
+      padding: 0.4em 0.8em;
+      margin-bottom: 0.7em;
+      display: inline-block;
+      font-style: italic;
+    }
+    .portfoliolink {
+      margin-top: 1.6rem;
+      display: flex;
+      justify-content: center;
+    }
+    .portfoliolink a {
+      text-decoration: none;
+      background: var(--accent);
+      color: var(--panel-color);
+      font-weight: 600;
+      font-size: 1em;
+      border-radius: 2rem;
+      padding: 0.75em 2.5em;
+      transition: background 0.27s;
+      box-shadow: 0 2px 13px 0 rgba(0,255,255,0.14);
+      letter-spacing: 0.03em;
+    }
+    .portfoliolink a:hover {
+      background: #09dade;
+      color: #fff;
+    }
+    .hashtags {
+      margin-top: 2em;
+      text-align: center;
+      color: var(--accent);
+      font-size: 1em;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+    .hashtags span {
+      color: #64fff0;
+      background: #192e37;
+      border-radius: 7px;
+      padding: 0.24em 0.7em;
+      margin: 0 0.18em;
+      display: inline-block;
+    }
+    @media (max-width:600px) {
       .container {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
+        padding: 1.1rem 0.6rem 1rem;
       }
-
-      .section {
-        margin-bottom: 3rem;
-        padding: 1.5rem;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      section {
+        padding: 1.15rem 0.5rem 0.9rem 0.5rem;
       }
-
-      .section img {
-        width: 100%;
-        max-height: 300px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin-top: 1rem;
+      .avatar img {
+        width: 80px; height: 80px;
       }
-
-      .section h2 {
-        margin-bottom: 1rem;
-        font-size: 2rem;
-        border-bottom: 2px solid #666;
-        display: inline-block;
+      .portfoliolink a {
+        font-size: 0.98em; padding: 0.7em 1.6em;
       }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header / Avatar -->
+    <div class="avatar">
+      <img src="img/Anshuman2.jpg" alt="Anshuman Acharya">
+      <h1>Anshuman Acharya</h1>
+      <div class="roles">Full-Stack Developer · Data Science Aspirant · Automation Enthusiast</div>
+    </div>
+    <div class="tagline">
+      🎓 After completing my B.Tech in Computer Science, I decided to deepen my practical skills and industry relevance by enrolling in the <strong>Professional Program in Data Science & AI</strong> at <b>@360DigiTMG</b>.<br>
+      <span style="color: var(--accent);">This hands-on journey empowers me to craft data-driven, automation-first solutions for real-world challenges.</span>
+    </div>
 
-      .section p {
-        margin-bottom: 1rem;
-      }
-
-      ul {
-        list-style-type: disc;
-        margin-left: 2rem;
-      }
-
-      a {
-        display: inline-block;
-        text-decoration: none;
-        background: #007bff;
-        color: #fff;
-        padding: 0.8rem 1.5rem;
-        border-radius: 5px;
-        transition: background 0.3s;
-      }
-
-      a:hover {
-        background: #0056b3;
-      }
-    </style>
-  </head>
-  <body>
-    <section class="container">
-      <h1>About Me</h1>
-
-      <!-- Summary Section -->
-      <div class="section">
-        <div class="about-img">
-          <img src="img/Anshuman2.jpg" alt="Anshuman" />
-        </div>
-        <h2>Summary</h2>
-        <p>
-          I am a passionate software developer with expertise in
-          <strong>full-stack development</strong>,
-          <strong>machine learning</strong>, and <strong>data analysis</strong>.
-          I excel at building scalable web applications and data-driven
-          solutions while ensuring efficiency and performance. My experience
-          spans creating innovative projects, including real-time systems and
-          AI-powered applications, which reflect my ability to solve complex
-          problems and deliver impactful results.
-        </p>
-        <p>
-          I am eager to contribute to cutting-edge projects and leverage my
-          technical skills in a dynamic organization that fosters innovation and
-          growth.
-        </p>
+    <!-- Projects Section -->
+    <section>
+      <h2><i class="bx bx-bulb"></i> Highlight Projects & Experience</h2>
+      <div class="section-body">
+        <span class="section-highlight">
+          📈 This decision has been a game-changer!
+        </span>
       </div>
+      <ul class="modern-list">
+        <li>🧠 <b>AI-powered Invoice Automation</b> (Python, Tesseract OCR) — Extract and log invoices with zero manual effort</li>
+        <li>📂 <b>Offline File Management System</b> — Google Drive-like file organization and retrieval (JS/CSS/HTML)</li>
+        <li>📊 <b>Power BI Dashboards</b> — Interactive reports and business intelligence from real-time data</li>
+        <li>📅 <b>AI Meeting Scheduler</b> — Automated meeting booking using Gmail & Google Calendar APIs</li>
+      </ul>
+    </section>
 
-     
-      <div class="badge-base LI-profile-badge" 
-        data-locale="en_US" data-size="medium" 
-        data-theme="dark" data-type="HORIZONTAL" 
-        data-vanity="anshuman-a-acharya" data-version="v1">
-        <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/anshuman-a-acharya?trk=profile-badge">
-          Anshuman Acharya
-        </a>
+    <!-- Toolkit/Skills Section -->
+    <section>
+      <h2><i class="bx bx-wrench"></i> Toolbox & Expertise</h2>
+      <div class="tech-tags">
+        <div class="tech-tag">Python</div>
+        <div class="tech-tag">JavaScript</div>
+        <div class="tech-tag">Node.js</div>
+        <div class="tech-tag">Tesseract OCR</div>
+        <div class="tech-tag">Power BI</div>
+        <div class="tech-tag">MySQL</div>
+        <div class="tech-tag">SQL</div>
+        <div class="tech-tag">n8n</div>
       </div>
-              
-
-      <!-- Education Section -->
-      <div class="section">
-        <h2>Education</h2>
-        <ul>
-          <li>
-            B.Tech in Computer Science and Information Technology (GITA,
-            Bhubaneswar)
-          </li>
-          <li>
-            Completed the 6th Semester with hands-on industrial experience in
-            data analysis
-          </li>
-        </ul>
-      </div>
-
-      <!-- Skills Section -->
-      <div class="section">
-        <h2>Skills</h2>
-        <ul>
-          <li>Backend Development: Node.js, Express.js</li>
-          <li>Frontend Development: HTML, CSS, JavaScript</li>
-          <li>Database Management: MongoDB, MySQL</li>
-          <li>Version Control: Git, GitHub</li>
-        </ul>
-        <img src="img/skills.jpg" alt="Skills Representation" />
-      </div>
-
-      <!-- Programming Languages -->
-      <div class="section">
-        <h2>Programming Languages</h2>
-        <ul>
-          <li>JavaScript</li>
-          <li>Java</li>
-          <li>Python</li>
-          <li>C++</li>
-        </ul>
-      </div>
-
-      <!-- Experience Section -->
-      <div class="section">
-        <h2>Internship / Experience</h2>
-        <ul>
-          <li>
-            Developed an offline storage website during NALCO vocational
-            training
-          </li>
-          <li>Built a bus ticket booking system using Java</li>
-        </ul>
-        <img src="img/experience.jpg" alt="Internship Highlights" />
-      </div>
-
-      <!-- Projects Section -->
-      <div class="section">
-        <h2>Projects</h2>
-        <ul>
-          <li>Real-time chat application using the MERN stack</li>
-          <li>AI-powered face detection system</li>
-          <li>Responsive website for BOT X ESPORTS</li>
-        </ul>
-        <img src="img/projects.jpg" alt="Project Snapshots" />
-      </div>
-
-      <!-- Achievements Section -->
-      <div class="section">
-        <h2>Achievements</h2>
-        <ul>
-          <li>Designed an interactive quiz website with friends</li>
-          <li>
-            Organized successful esports events and led the team Sinisters
-          </li>
-        </ul>
-        <img src="img/achievements.jpg" alt="Achievement Moments" />
-      </div>
-
-      <!-- Extracurricular Section -->
-      <div class="section">
-        <h2>Extracurricular</h2>
-        <p>
-          Outside of coding, I enjoy organizing esports tournaments, taking on
-          leadership roles, and exploring creative challenges in gaming and
-          technology.
-        </p>
-        <img src="img/extracurricular.jpg" alt="Extracurricular Activities" />
-      </div>
-
-      <div class="section" style="text-align: center">
-        <a href="index.html">Go Back to Homepage</a>
+      <div class="section-body">
+        From web automation to advanced analytics, I leverage these tools to solve complex business and technical problems with simplicity and efficiency.
       </div>
     </section>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-  </body>
-   
+
+    <!-- Education Section -->
+    <section>
+      <h2><i class="bx bx-award"></i> Education & Certifications</h2>
+      <ul class="modern-list">
+        <li>B.Tech in Computer Science & IT, GITA Bhubaneswar</li>
+        <li>Professional Program in Data Science & AI (<b>360DigiTMG</b>)</li>
+        <li>Certifications: Power BI, MySQL, Data Science & AI</li>
+      </ul>
+    </section>
+
+    <!-- Impact Section -->
+    <section>
+      <h2><i class="bx bx-rocket"></i> My Approach</h2>
+      <div class="section-body">
+        <span class="section-highlight">
+          My journey has taught me to design for real impacts — bridging development and data science with automation, intuitive UI, & robust databases.
+        </span>
+        <br>
+        I’m constantly seeking opportunities to work on innovative, outcome-driven projects and contribute to the open-source community. Grateful to my mentors at <b>@360DigiTMG</b> for their ongoing support!
+      </div>
+    </section>
+
+    <!-- Call To Action / Portfolio Link -->
+    <div class="portfoliolink">
+      <a href="index.html"><i class="bx bx-left-arrow-alt"></i> Back to Portfolio</a>
+    </div>
+    <div class="portfoliolink" style="margin-top:1.25em;">
+      <a href="https://anshux01.github.io/Portfolio" target="_blank"><i class="bx bx-link-external"></i> View Live Portfolio</a>
+    </div>
+
+    <!-- Hashtags -->
+    <div class="hashtags">
+      <span>#datascience</span>
+      <span>#portfolio</span>
+      <span>#python</span>
+      <span>#powerbi</span>
+      <span>#webdevelopment</span>
+      <span>#360digitmg</span>
+      <span>#fullstackdeveloper</span>
+      <span>#projects</span>
+      <span>#resume</span>
+    </div>
+  </div>
+</body>
 </html>
