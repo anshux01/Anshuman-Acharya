@@ -1,83 +1,112 @@
-const $ = (s, r = document) => r.querySelector(s);
-const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+/* =========================================================
+   ANSHUMAN ACHARYA PORTFOLIO
+   ========================================================= */
+
+/* =========================
+   HELPERS
+========================= */
+
+const $ = (selector, root = document) => root.querySelector(selector);
+
+const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+
+/* =========================
+   LINKS
+========================= */
 
 const gh = "https://github.com/anshux01/";
+
+/* =========================
+   PROJECT DATA
+========================= */
+
 const projects = [
   {
-    t: "Car Showroom Sales Analytics",
-    c: "data",
-    img: "img/car-showroom-sales.png",
-    d: "Exploratory analysis of 10 years of car sales using CRISP-ML(Q), with cleaning, charts and business takeaways.",
-    tags: ["Python", "Pandas", "Seaborn"],
-    code: gh + "Car_Sales_EDA",
+    title: "Car Showroom Sales Analytics",
+    desc: "Interactive sales analytics solution for understanding showroom performance, customer trends, revenue and vehicle sales.",
+    tech: ["Python", "Pandas", "NumPy", "Power BI", "SQL"],
+    c: "Data",
+    icon: "bx-bar-chart-alt-2",
+    link: "#",
   },
+
   {
-    t: "AI Invoice Automation",
-    c: "ai",
-    img: "img/invoice-automation.jpg",
-    d: "Reads invoices with Tesseract OCR and logs fields to Google Sheets with no manual typing.",
-    tags: ["Python", "Tesseract OCR", "Sheets API"],
-    code: gh + "AI-Invoice-Automation",
+    title: "AI Invoice Automation",
+    desc: "AI-powered invoice processing workflow using OCR and automation to extract and organize invoice information.",
+    tech: ["Python", "Tesseract OCR", "n8n", "Google APIs"],
+    c: "AI / ML",
+    icon: "bx-receipt",
+    link: "#",
   },
+
   {
-    t: "AI Face Detection System",
-    c: "ai",
-    img: "img/face detection system project.png",
-    d: "Detects faces in images and live video using computer-vision models.",
-    tags: ["Python", "OpenCV", "TensorFlow"],
-    code: gh + "Face-Detection-System",
+    title: "AI Face Detection System",
+    desc: "Computer vision project for detecting faces using deep learning and image-processing techniques.",
+    tech: ["Python", "OpenCV", "TensorFlow", "Keras", "SQLite"],
+    c: "AI / ML",
+    icon: "bx-face",
+    link: "#",
   },
+
   {
-    t: "N Drive File Manager",
-    c: "web",
-    img: "img/portfolio_ndrive.jpg",
-    d: "An offline Google Drive-style file organizer built with HTML, CSS and JavaScript.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    code: gh + "N-Drive",
-    live: "https://anshux01.github.io/N-Drive/",
+    title: "N Drive File Manager",
+    desc: "Offline file-storage and management website developed during NALCO vocational training.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    c: "Web apps",
+    icon: "bx-folder-open",
+    link: "#",
   },
+
   {
-    t: "Real-time Chat Application",
-    c: "web",
-    img: "img/Chat Application project.png",
-    d: "Instant messaging with rooms and live delivery over WebSockets.",
-    tags: ["React", "Node.js", "Socket.IO", "MongoDB"],
-    code: gh + "Chat-Application",
+    title: "Real-time Chat Application",
+    desc: "Real-time chat application with authentication and instant communication between users.",
+    tech: ["React.js", "Node.js", "MongoDB", "Socket.IO"],
+    c: "Web apps",
+    icon: "bx-message-rounded-dots",
+    link: "#",
   },
+
   {
-    t: "Bus Ticket Booking System",
-    c: "web",
-    img: "img/Bus Ticket Booking System project.png",
-    d: "Desktop booking system with seat management and database-backed booking records.",
-    tags: ["Java", "MySQL", "Swing"],
-    code: gh + "Bus-Ticket-Booking",
+    title: "Bus Ticket Booking System",
+    desc: "Desktop-based bus ticket booking application with database integration.",
+    tech: ["Java", "Swing", "MySQL", "NetBeans"],
+    c: "Web apps",
+    icon: "bx-bus",
+    link: "#",
   },
+
   {
-    t: "Interactive Quiz Platform",
-    c: "web",
-    img: "img/quiz website project.png",
-    d: "Timed quizzes with score tracking and progress saved in local storage.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    code: gh + "Quiz-Website",
-    live: "https://anshux01.github.io/Quiz-Website/",
+    title: "Interactive Quiz Platform",
+    desc: "Online quiz platform for answering questions and displaying quiz results.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    c: "Web apps",
+    icon: "bx-question-mark",
+    link: "#",
   },
+
   {
-    t: "Online Exam System",
-    c: "web",
-    img: "img/online exam system project.png",
-    d: "Browser-based exam workflow with questions, answers and result handling.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    code: gh + "Online-Exam-System",
+    title: "Online Exam System",
+    desc: "Web-based examination system for conducting and managing online tests.",
+    tech: ["HTML", "CSS", "JavaScript", "MySQL"],
+    c: "Web apps",
+    icon: "bx-edit-alt",
+    link: "#",
   },
+
   {
-    t: "Data Analysis & Reporting",
-    c: "data",
-    img: "img/data-analysis.png",
-    d: "Data cleaning, exploratory analysis and reporting focused on useful business insights.",
-    tags: ["Python", "Pandas", "Matplotlib"],
-    code: gh,
+    title: "Data Analysis & Reporting",
+    desc: "Data analysis and reporting workflows using Python, SQL, visualization and business intelligence tools.",
+    tech: ["Python", "SQL", "Pandas", "Seaborn", "Power BI"],
+    c: "Data",
+    icon: "bx-data",
+    link: "#",
   },
 ];
+
+/* =========================
+   SKILLS
+========================= */
+
 const skills = {
   Data: [
     "Python",
@@ -91,6 +120,7 @@ const skills = {
     "Statistics",
     "EDA",
   ],
+
   "AI / ML": [
     "Machine Learning",
     "Deep Learning",
@@ -100,6 +130,7 @@ const skills = {
     "Keras",
     "Computer Vision",
   ],
+
   Development: [
     "JavaScript",
     "React.js",
@@ -111,6 +142,7 @@ const skills = {
     "CSS",
     "Tailwind CSS",
   ],
+
   Automation: [
     "Tesseract OCR",
     "Selenium",
@@ -120,172 +152,431 @@ const skills = {
     "Git",
   ],
 };
+
+/* =========================
+   CERTIFICATES
+========================= */
+
 const certs = [
-  [
-    "SQL · MySQL · MS SQL Server",
-    "360DigiTMG, Jul 2025",
-    "Certificate (1).pdf",
-  ],
-  ["OOP · Jupyter · Python", "360DigiTMG, Jun 2025", "Certificate.pdf"],
-  ["Python Programming", "HackerRank, Jul 2025", "python-basic-hackerrank.pdf"],
-  ["SQL Fundamentals", "HackerRank, Jul 2025", "sql-basic-hackerrank.pdf"],
-  ["SQL · Relational DB · Python", "IBM, Jan 2025", "db-sql-ibm.pdf"],
-  ["HTML · CSS · JavaScript", "Meta, Jan 2025", "frontend-meta.pdf"],
-  ["Neural Nets · Deep Learning", "AWS, Jul 2024", "nn-dl-coursera.pdf"],
-  ["Data Science · Python", "IBM · NPTEL, May 2024", "ds-python-nptel.pdf"],
-  [
-    "Google Cloud Platform",
-    "NPTEL, 2024",
-    "Google Cloud Computing Foundations.pdf",
-  ],
-  [
-    "Machine Learning · AI Design",
-    "Coursera, Jan 2024",
-    "ml-foundations-coursera.pdf",
-  ],
+  {
+    title: "SQL · MySQL · MS SQL Server",
+    issuer: "360DigiTMG",
+    date: "Jul 2025",
+    file: "Certificate (1).pdf",
+  },
+
+  {
+    title: "OOP · Jupyter · Python",
+    issuer: "360DigiTMG",
+    date: "Jun 2025",
+    file: "Certificate.pdf",
+  },
+
+  {
+    title: "Python Programming",
+    issuer: "HackerRank",
+    date: "Jul 2025",
+    file: "python-basic-hackerrank.pdf",
+  },
+
+  {
+    title: "SQL Fundamentals",
+    issuer: "HackerRank",
+    date: "Jul 2025",
+    file: "sql-basic-hackerrank.pdf",
+  },
+
+  {
+    title: "SQL · Relational DB · Python",
+    issuer: "IBM",
+    date: "Jan 2025",
+    file: "db-sql-ibm.pdf",
+  },
+
+  {
+    title: "HTML · CSS · JavaScript",
+    issuer: "Meta",
+    date: "Jan 2025",
+    file: "frontend-meta.pdf",
+  },
+
+  {
+    title: "Neural Networks · Deep Learning",
+    issuer: "AWS",
+    date: "Jul 2024",
+    file: "nn-dl-coursera.pdf",
+  },
+
+  {
+    title: "Data Science · Python",
+    issuer: "IBM · NPTEL",
+    date: "May 2024",
+    file: "ds-python-nptel.pdf",
+  },
+
+  {
+    title: "Google Cloud Platform",
+    issuer: "NPTEL",
+    date: "2024",
+    file: "Google Cloud Computing Foundations.pdf",
+  },
+
+  {
+    title: "Machine Learning · AI Design",
+    issuer: "Coursera",
+    date: "Jan 2024",
+    file: "ml-foundations-coursera.pdf",
+  },
 ];
 
-function chips(box, labels, onPick) {
-  if (!box) return;
-  box.innerHTML = labels
-    .map(
-      (l, i) =>
-        `<button type="button" class="chip${i ? "" : " on"}">${l}</button>`,
-    )
-    .join("");
-  box.addEventListener("click", (e) => {
-    const b = e.target.closest(".chip");
-    if (!b) return;
-    $$(".chip", box).forEach((x) => x.classList.toggle("on", x === b));
-    onPick(b.textContent);
+/* =========================================================
+   REVEAL OBSERVER
+   IMPORTANT:
+   THIS MUST COME BEFORE showProjects()
+========================================================= */
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in");
+
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+
+  {
+    threshold: 0.08,
+  },
+);
+
+function reveal() {
+  $$(".rv:not(.in)").forEach((element) => {
+    revealObserver.observe(element);
   });
 }
 
-const names = { data: "Data", ai: "AI / ML", web: "Web apps" };
-const pBox = $("#projects");
-function showProjects(filter = "All") {
-  const key = Object.keys(names).find((k) => names[k] === filter);
-  pBox.innerHTML = projects
-    .filter((p) => !key || p.c === key)
-    .map(
-      (p) => `<article class="card rv">
-  <img loading="lazy" src="${p.img}" alt="${p.t}" onerror="this.style.opacity='.35'">
-  <div><small>${names[p.c]}</small><h4>${p.t}</h4><p>${p.d}</p>
-  <div class="tags">${p.tags.map((t) => `<span>${t}</span>`).join("")}</div>
-  <p class="links"><a href="${p.code}" target="_blank" rel="noopener">Code</a>${p.live ? `<a href="${p.live}" target="_blank" rel="noopener">Live demo</a>` : ""}</p></div>
- </article>`,
-    )
-    .join("");
-  reveal();
-}
-chips($("#pfilter"), ["All", ...Object.values(names)], showProjects);
-showProjects();
+/* Static elements */
 
-const sBox = $("#skills-list");
-function showSkills(group = "All") {
-  const list = group === "All" ? Object.values(skills).flat() : skills[group];
-  sBox.innerHTML = list.map((s) => `<span>${s}</span>`).join("");
-}
-chips($("#sfilter"), ["All", ...Object.keys(skills)], showSkills);
-showSkills();
-
-$("#certs").innerHTML = certs
-  .map(
-    ([t, m, f]) =>
-      `<li><a href="img/certificates/${f}" target="_blank" rel="noopener"><b>${t}</b><small>${m}</small></a></li>`,
-  )
-  .join("");
-
-const roles = [
-  "useful solutions",
-  "data insights",
-  "working software",
-  "smarter workflows",
-];
-let ri = 0;
-const role = $("#role");
-setInterval(() => {
-  role.style.opacity = 0;
-  setTimeout(() => {
-    role.textContent = roles[++ri % roles.length];
-    role.style.opacity = 1;
-  }, 300);
-}, 2600);
-
-const statObserver = new IntersectionObserver(
-  (es) =>
-    es.forEach((e) => {
-      if (!e.isIntersecting) return;
-      statObserver.unobserve(e.target);
-      const end = +e.target.dataset.count;
-      let n = 0;
-      const id = setInterval(() => {
-        e.target.textContent = ++n + "+";
-        if (n >= end) clearInterval(id);
-      }, 700 / end);
-    }),
-  { threshold: 0.7 },
-);
-$$("[data-count]").forEach((x) => statObserver.observe(x));
-
-const revealObserver = new IntersectionObserver(
-  (es) =>
-    es.forEach((e) => {
-      if (e.isIntersecting) {
-        e.target.classList.add("in");
-        revealObserver.unobserve(e.target);
-      }
-    }),
-  { threshold: 0.08 },
-);
-function reveal() {
-  $$(".rv:not(.in)").forEach((x) => revealObserver.observe(x));
-}
 $$(
-  ".section-head,.featured-project,.experience-card,.education-card,.topic-card,.about-copy,.services,.contact-grid",
-).forEach((x) => x.classList.add("rv"));
+  ".section-head," +
+    ".featured-project," +
+    ".experience-card," +
+    ".education-card," +
+    ".topic-card," +
+    ".about-copy," +
+    ".services," +
+    ".contact-grid",
+).forEach((element) => {
+  element.classList.add("rv");
+});
+
+/* Initial reveal */
+
 reveal();
 
-addEventListener(
-  "scroll",
-  () => {
-    const h = document.documentElement;
-    const max = h.scrollHeight - h.clientHeight;
-    $("#progress").style.width =
-      (max ? Math.min(100, (h.scrollTop / max) * 100) : 0) + "%";
-  },
-  { passive: true },
+/* =========================
+   FILTER CHIPS
+========================= */
+
+function chips(box, labels, onPick) {
+  if (!box) return;
+
+  box.innerHTML = labels
+    .map(
+      (label, index) => `
+
+        <button
+          type="button"
+          class="filter-chip ${index === 0 ? "active" : ""}"
+          data-value="${label}"
+        >
+          ${label}
+        </button>
+
+      `,
+    )
+    .join("");
+
+  box.addEventListener("click", (event) => {
+    const button = event.target.closest(".filter-chip");
+
+    if (!button) return;
+
+    $$(".filter-chip", box).forEach((chip) => {
+      chip.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    onPick(button.dataset.value);
+  });
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+const projectNames = {
+  data: "Data",
+  ai: "AI / ML",
+  web: "Web apps",
+};
+
+const projectBox = $("#projects");
+
+function showProjects(filter = "All") {
+  if (!projectBox) return;
+
+  const key = Object.keys(projectNames).find((k) => projectNames[k] === filter);
+
+  const filteredProjects = projects.filter(
+    (project) => !key || project.c === projectNames[key],
+  );
+
+  projectBox.innerHTML = filteredProjects
+    .map(
+      (project) => `
+
+          <article class="project-card rv">
+
+            <div class="project-icon">
+
+              <i class="bx ${project.icon}"></i>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <span class="project-category">
+                ${project.c}
+              </span>
+
+
+              <h3>
+                ${project.title}
+              </h3>
+
+
+              <p>
+                ${project.desc}
+              </p>
+
+
+              <div class="project-tech">
+
+                ${project.tech.map((tech) => `<span>${tech}</span>`).join("")}
+
+              </div>
+
+
+              ${
+                project.link && project.link !== "#"
+                  ? `
+                    <a
+                      href="${project.link}"
+                      target="_blank"
+                      rel="noopener"
+                      class="project-link"
+                    >
+                      View Project
+                      <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                  `
+                  : ""
+              }
+
+            </div>
+
+          </article>
+
+        `,
+    )
+    .join("");
+
+  reveal();
+}
+
+/* Project filters */
+
+chips(
+  $("#pfilter"),
+
+  ["All", ...Object.values(projectNames)],
+
+  showProjects,
 );
 
-const navObserver = new IntersectionObserver(
-  (es) =>
-    es.forEach((e) => {
-      if (e.isIntersecting)
-        $$("#nav a").forEach((a) =>
-          a.classList.toggle(
-            "on",
-            a.getAttribute("href") === "#" + e.target.id,
-          ),
-        );
-    }),
-  { rootMargin: "-42% 0px -52% 0px" },
+/* Load projects */
+
+showProjects();
+
+/* =========================
+   SKILLS
+========================= */
+
+const skillsBox = $("#skills-list");
+
+function showSkills(group = "All") {
+  if (!skillsBox) return;
+
+  const list =
+    group === "All" ? Object.values(skills).flat() : skills[group] || [];
+
+  skillsBox.innerHTML = list.map((skill) => `<span>${skill}</span>`).join("");
+}
+
+/* Skill filters */
+
+chips(
+  $("#sfilter"),
+
+  ["All", ...Object.keys(skills)],
+
+  showSkills,
 );
-$$("main section[id]").forEach((s) => navObserver.observe(s));
+
+/* Load skills */
+
+showSkills();
+
+/* =========================
+   CERTIFICATES
+========================= */
+
+const certificateBox = $("#certs");
+
+if (certificateBox) {
+  certificateBox.innerHTML = certs
+    .map(
+      (cert) => `
+
+          <article class="certificate-card">
+
+            <div class="certificate-icon">
+
+              <i class="bx bx-certification"></i>
+
+            </div>
+
+
+            <div class="certificate-info">
+
+              <h3>
+                ${cert.title}
+              </h3>
+
+
+              <p>
+
+                ${cert.issuer}
+
+                <span>•</span>
+
+                ${cert.date}
+
+              </p>
+
+
+              ${
+                cert.file
+                  ? `
+                    <a
+                      href="${encodeURI(cert.file)}"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      View Certificate
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  `
+                  : ""
+              }
+
+            </div>
+
+          </article>
+
+        `,
+    )
+    .join("");
+}
+
+/* =========================
+   THEME
+========================= */
 
 function themeIcon() {
-  $("#theme i").className =
+  const themeButton = $("#theme");
+
+  if (!themeButton) return;
+
+  const icon = themeButton.querySelector("i");
+
+  if (!icon) return;
+
+  icon.className =
     "bx " +
     (document.documentElement.dataset.theme === "dark" ? "bx-sun" : "bx-moon");
 }
+
+/* Load saved theme */
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark" || savedTheme === "light") {
+  document.documentElement.dataset.theme = savedTheme;
+}
+
 themeIcon();
-$("#theme").onclick = () => {
-  const t =
-    document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-  document.documentElement.dataset.theme = t;
-  localStorage.setItem("theme", t);
-  themeIcon();
-};
-$("#burger").onclick = () => $("#nav").classList.toggle("open");
-$("#nav").onclick = (e) => {
-  if (e.target.closest("a")) $("#nav").classList.remove("open");
-};
+
+/* Theme toggle */
+
+const themeButton = $("#theme");
+
+if (themeButton) {
+  themeButton.addEventListener("click", () => {
+    const current = document.documentElement.dataset.theme;
+
+    const newTheme = current === "dark" ? "light" : "dark";
+
+    document.documentElement.dataset.theme = newTheme;
+
+    localStorage.setItem("theme", newTheme);
+
+    themeIcon();
+  });
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const burger = $("#burger");
+const nav = $("#nav");
+
+if (burger && nav) {
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+}
+
+if (nav) {
+  nav.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+      nav.classList.remove("open");
+    }
+  });
+}
+
+/* =========================
+   CURRENT YEAR
+========================= */
+
+const year = $("#year");
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}

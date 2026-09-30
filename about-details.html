@@ -2,185 +2,326 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="About Anshuman Acharya — Data Science, AI/ML, automation and full-stack development."
-    />
+
+    <meta name="description" content="More about Anshuman Acharya" />
+
     <title>About | Anshuman Acharya</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
-    <script>
-      document.documentElement.dataset.theme =
-        localStorage.getItem("theme") || "light";
-    </script>
   </head>
+
   <body>
-    <div id="progress"></div>
-    <header class="top">
-      <a href="index.html" class="logo">Anshuman Acharya</a>
-      <nav id="nav">
-        <a href="index.html#work">Work</a
-        ><a href="index.html#experience">Experience</a
-        ><a href="index.html#education">Education</a
-        ><a href="index.html#skills">Skills</a
-        ><a href="index.html#topics">Topics</a
-        ><a href="index.html#about">About</a
-        ><a href="index.html#contact">Contact</a>
+    <!-- =========================
+       HEADER
+  ========================== -->
+
+    <header class="header">
+      <a href="index.html" class="logo"> Anshuman<span>.</span> </a>
+
+      <nav class="nav">
+        <a href="index.html#home"> Home </a>
+
+        <a href="index.html#projects"> Work </a>
+
+        <a href="index.html#experience"> Experience </a>
+
+        <a href="index.html#skills"> Skills </a>
+
+        <a href="index.html#contact"> Contact </a>
       </nav>
-      <button id="theme" class="icon-btn" aria-label="Toggle theme">
-        <i class="bx bx-moon"></i>
-      </button>
-      <button id="burger" class="icon-btn" aria-label="Open menu">
-        <i class="bx bx-menu"></i>
-      </button>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme" type="button">
+          <i class="bx bx-moon"></i>
+        </button>
+      </div>
     </header>
 
+    <!-- =========================
+       ABOUT PAGE
+  ========================== -->
+
     <main>
-      <section class="wrap section about-page-hero">
-        <div class="about-page-photo">
-          <img src="img/Anshuman2.jpg" alt="Anshuman Acharya" />
-        </div>
-        <div>
-          <a class="link back" href="index.html"
-            ><i class="bx bx-left-arrow-alt"></i> Back to portfolio</a
-          ><span class="eyebrow">ABOUT ME</span>
-          <h1>Hi, I'm Anshuman.</h1>
-          <p class="sub">
-            A Computer Science graduate building toward Data Science and AI/ML,
-            with a strong foundation in software development, analytics and
-            automation.
+      <section class="section">
+        <div class="section-head">
+          <span class="eyebrow"> ABOUT ME </span>
+
+          <h1>Building practical solutions with data and technology.</h1>
+
+          <p>
+            A little more about my background, interests and technical
+            direction.
           </p>
         </div>
-      </section>
 
-      <section class="wrap section about-detail-grid">
-        <article class="long-copy">
-          <p class="intro">
-            I graduated with a B.Tech in Computer Science & IT from Gandhi
-            Institute for Technological Advancements (GITA), Bhubaneswar. My
-            software-development background gave me a foundation in programming,
-            databases and application development, and I am now focused on
-            applying that foundation to Data Science and AI.
-          </p>
-          <p>
-            I completed the Professional Program in Data Science & AI at
-            360DigiTMG, Hyderabad, where I developed hands-on skills in Python,
-            SQL, statistics, data preprocessing, exploratory data analysis,
-            visualization, machine learning and Power BI.
-          </p>
-          <p>
-            My project work has moved from traditional web applications toward
-            data-driven and intelligent systems. This includes an AI-based
-            road-marking detection system using computer vision, analytics
-            projects, OCR automation, real-time applications and database-driven
-            systems.
-          </p>
-          <p>
-            I also have experience with data annotation and quality-review
-            workflows, including structured content classification and
-            schema-based checking. That work strengthened my attention to
-            consistency, validation and data quality.
-          </p>
-          <p>
-            I enjoy projects where technology solves a practical problem. My
-            approach is usually to understand the problem first, prepare
-            reliable data, build a useful solution, test it, and present the
-            result clearly.
-          </p>
-        </article>
-
-        <aside class="about-side">
-          <div class="now-card">
-            <span class="eyebrow">CURRENT FOCUS</span>
-            <h3>Data Science · AI/ML · Analytics</h3>
+        <div class="about-grid">
+          <div class="about-copy">
             <p>
-              Python · SQL · Machine Learning · Computer Vision · Power BI ·
-              Automation
+              I'm Anshuman Acharya, a Computer Science graduate with a strong
+              interest in Data Science, Artificial Intelligence, Machine
+              Learning and software development.
+            </p>
+
+            <p>
+              I completed my B.Tech in Computer Science from Gandhi Institute
+              for Technological Advancements (GITA), Bhubaneswar.
+            </p>
+
+            <p>
+              My transition into Data Science and AI was strengthened through my
+              training at 360DigiTMG in Hyderabad, where I worked with Python,
+              SQL, data preprocessing, exploratory data analysis, visualization,
+              machine learning and Power BI.
+            </p>
+
+            <p>
+              I enjoy working on projects where technology can solve a practical
+              problem. My work includes computer vision, AI automation, OCR,
+              analytics, dashboards and full-stack applications.
+            </p>
+
+            <p>
+              I have also worked with AI/ML data annotation, auditing and
+              quality-review workflows, giving me experience with structured
+              data, annotation guidelines and quality validation.
+            </p>
+
+            <p>
+              Currently, my focus is on building practical Data Science, AI and
+              ML projects while continuing to improve my skills in Python, SQL,
+              machine learning, deep learning and data analytics.
             </p>
           </div>
-          <div class="principles">
-            <div>
-              <i class="bx bx-bulb"></i>
-              <h3>Practical</h3>
-              <p>
-                Build solutions around real problems rather than technology
-                alone.
-              </p>
-            </div>
-            <div>
+
+          <div class="services">
+            <article class="service-card">
               <i class="bx bx-bar-chart-alt-2"></i>
-              <h3>Data-driven</h3>
-              <p>
-                Use clean data, analysis and measurable results to guide
-                decisions.
-              </p>
-            </div>
-            <div>
+
+              <div>
+                <h3>Data Science & Analytics</h3>
+
+                <p>Python, SQL, EDA, visualization and reporting.</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="bx bx-brain"></i>
+
+              <div>
+                <h3>AI / ML</h3>
+
+                <p>
+                  Machine learning, deep learning, computer vision and YOLO.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="bx bx-bot"></i>
+
+              <div>
+                <h3>Automation & AI Workflows</h3>
+
+                <p>OCR, APIs, n8n and workflow automation.</p>
+              </div>
+            </article>
+
+            <article class="service-card">
               <i class="bx bx-code-alt"></i>
-              <h3>Build-oriented</h3>
-              <p>
-                Turn concepts into working applications, models and dashboards.
-              </p>
-            </div>
-            <div>
+
+              <div>
+                <h3>Full-Stack Development</h3>
+
+                <p>React, Node.js, Express, MongoDB and REST APIs.</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="bx bx-pie-chart-alt-2"></i>
+
+              <div>
+                <h3>Business Intelligence</h3>
+
+                <p>Power BI dashboards, reporting and visualization.</p>
+              </div>
+            </article>
+
+            <article class="service-card">
               <i class="bx bx-check-shield"></i>
-              <h3>Quality-focused</h3>
-              <p>
-                Pay attention to validation, consistency and reliable outputs.
-              </p>
-            </div>
+
+              <div>
+                <h3>Data Quality & Annotation</h3>
+
+                <p>AI/ML annotation, auditing and quality-review workflows.</p>
+              </div>
+            </article>
           </div>
-        </aside>
+        </div>
       </section>
 
-      <section class="wrap section">
+      <!-- =========================
+         CURRENT DIRECTION
+    ========================== -->
+
+      <section class="section">
         <div class="section-head">
-          <span class="eyebrow">TECHNICAL DIRECTION</span>
-          <h2>What I am building toward</h2>
+          <span class="eyebrow"> CURRENT DIRECTION </span>
+
+          <h2>What I'm focusing on</h2>
         </div>
-        <div class="direction-grid">
-          <article>
-            <i class="bx bx-data"></i>
+
+        <div class="topics-grid">
+          <article class="topic-card">
+            <div class="topic-icon">
+              <i class="bx bx-data"></i>
+            </div>
+
             <h3>Data Science</h3>
+
             <p>
-              Data cleaning, EDA, statistics, visualization and machine
-              learning.
+              Building stronger foundations in data analysis, statistics, Python
+              and SQL.
             </p>
           </article>
-          <article>
-            <i class="bx bx-brain"></i>
-            <h3>AI / ML</h3>
+
+          <article class="topic-card">
+            <div class="topic-icon">
+              <i class="bx bx-brain"></i>
+            </div>
+
+            <h3>Artificial Intelligence</h3>
+
             <p>
-              Computer vision, deep learning, model evaluation and practical AI
+              Exploring machine learning, deep learning and computer vision
               applications.
             </p>
           </article>
-          <article>
-            <i class="bx bx-bot"></i>
-            <h3>Automation</h3>
+
+          <article class="topic-card">
+            <div class="topic-icon">
+              <i class="bx bx-code-alt"></i>
+            </div>
+
+            <h3>Practical Development</h3>
+
             <p>
-              AI-assisted workflows and automation that reduce repetitive manual
-              tasks.
+              Turning analytical and AI ideas into usable applications and
+              workflows.
             </p>
           </article>
         </div>
       </section>
+
+      <!-- =========================
+         BACK
+    ========================== -->
+
+      <section class="section">
+        <a href="index.html" class="btn primary">
+          <i class="bx bx-left-arrow-alt"></i>
+
+          Back to Portfolio
+        </a>
+      </section>
     </main>
 
-    <footer class="wrap footer">
-      <span>© 2026 Anshuman Acharya</span
-      ><a href="index.html">Back to portfolio</a>
+    <!-- =========================
+       FOOTER
+  ========================== -->
+
+    <footer class="footer">
+      <div>
+        <strong> Anshuman Acharya </strong>
+
+        <span> Data Science · AI/ML · Development </span>
+      </div>
+
+      <p>Developed by Anshuman Acharya with 360DigiTMG</p>
+
+      <div class="footer-socials">
+        <a href="https://github.com/anshux01" target="_blank" rel="noopener">
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/anshuman-a-acharya/"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bx bxl-linkedin"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/ans_hu_x/"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+      </div>
     </footer>
-    <script src="script.js"></script>
+
+    <div class="copyright">
+      © <span id="year"></span>
+      Anshuman Acharya. All rights reserved.
+    </div>
+
+    <script>
+      /* Theme */
+
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+
+      const themeButton = document.querySelector("#theme");
+
+      function updateThemeIcon() {
+        const icon = themeButton?.querySelector("i");
+
+        if (!icon) return;
+
+        icon.className =
+          "bx " +
+          (document.documentElement.dataset.theme === "dark"
+            ? "bx-sun"
+            : "bx-moon");
+      }
+
+      updateThemeIcon();
+
+      themeButton?.addEventListener("click", () => {
+        const current = document.documentElement.dataset.theme;
+
+        const next = current === "dark" ? "light" : "dark";
+
+        document.documentElement.dataset.theme = next;
+
+        localStorage.setItem("theme", next);
+
+        updateThemeIcon();
+      });
+
+      /* Year */
+
+      const year = document.querySelector("#year");
+
+      if (year) {
+        year.textContent = new Date().getFullYear();
+      }
+    </script>
   </body>
 </html>

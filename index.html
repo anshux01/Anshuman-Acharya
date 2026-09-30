@@ -2,35 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
-      content="Portfolio of Anshuman Acharya — Data Science, AI/ML, analytics, automation and full-stack development."
+      content="Anshuman Acharya — Data Science, AI/ML and Full-Stack Developer Portfolio"
     />
-    <title>Anshuman Acharya | Data Science, AI/ML & Full-Stack</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+
+    <title>Anshuman Acharya | Data Science & AI/ML</title>
+
+    <!-- Boxicons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script>
-      document.documentElement.dataset.theme =
-        localStorage.getItem("theme") || "light";
-    </script>
-  </head>
-  <body>
-    <div id="progress"></div>
 
-    <header class="top">
-      <a href="#home" class="logo">Anshuman Acharya</a>
-      <nav id="nav">
-        <a href="#work">Work</a>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+       HEADER
+  ========================== -->
+
+    <header class="header">
+      <a href="#home" class="logo"> Anshuman<span>.</span> </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Work</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
@@ -38,483 +45,689 @@
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button id="theme" class="icon-btn" aria-label="Toggle theme">
-        <i class="bx bx-moon"></i>
-      </button>
-      <button id="burger" class="icon-btn" aria-label="Open menu">
-        <i class="bx bx-menu"></i>
-      </button>
+
+      <div class="header-actions">
+        <button
+          class="icon-btn"
+          id="theme"
+          type="button"
+          aria-label="Toggle theme"
+        >
+          <i class="bx bx-moon"></i>
+        </button>
+
+        <button
+          class="icon-btn burger"
+          id="burger"
+          type="button"
+          aria-label="Open menu"
+        >
+          <i class="bx bx-menu"></i>
+        </button>
+      </div>
     </header>
 
     <main>
-      <section id="home" class="hero wrap">
-        <div class="hero-copy">
-          <p class="status">
-            <span class="dot"></span>Seeking Data Science & AI/ML opportunities
-          </p>
+      <!-- =========================
+         HERO
+    ========================== -->
+
+      <section class="hero section" id="home">
+        <div class="hero-content">
+          <span class="eyebrow"> DATA SCIENCE · AI/ML · DEVELOPMENT </span>
+
           <h1>
-            I turn data into<br /><span id="role">useful solutions</span>.
+            Hi, I'm
+            <span>Anshuman Acharya.</span>
           </h1>
-          <p class="lead">
-            B.Tech graduate in Computer Science & IT, building deeper expertise
-            in Data Science & AI. I work across Python, SQL, machine learning,
-            analytics, automation and full-stack development to turn real-world
-            problems into usable products.
+
+          <h2>I turn data into useful solutions.</h2>
+
+          <p class="hero-text">
+            I work across Data Science, Artificial Intelligence, Machine
+            Learning, automation and full-stack development to build practical
+            solutions from real-world problems.
           </p>
-          <div class="cta">
-            <a class="btn primary" href="#work">Explore my work</a>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary">
+              Explore My Work
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
             <a
-              class="btn"
-              href="CV/Anshuman_Acharya.pdf"
+              href="Anshuman_Acharya_Resume.pdf"
               target="_blank"
-              rel="noopener"
-              ><i class="bx bx-download"></i> Resume</a
+              class="btn secondary"
             >
-            <a class="btn" href="mailto:anshuman.acharyaa@gmail.com"
-              ><i class="bx bx-envelope"></i> Contact</a
-            >
+              Resume
+              <i class="bx bx-download"></i>
+            </a>
+
+            <a href="#contact" class="btn secondary">
+              Contact
+              <i class="bx bx-envelope"></i>
+            </a>
           </div>
-          <dl class="stats">
-            <div>
-              <dt data-count="12">0</dt>
-              <dd>projects</dd>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>10+</strong>
+              <span>Projects</span>
             </div>
-            <div>
-              <dt data-count="10">0</dt>
-              <dd>certificates</dd>
+
+            <div class="stat">
+              <strong>10+</strong>
+              <span>Certifications</span>
             </div>
-            <div>
-              <dt data-count="20">0</dt>
-              <dd>technologies</dd>
+
+            <div class="stat">
+              <strong>4+</strong>
+              <span>Experience Areas</span>
             </div>
-          </dl>
+          </div>
         </div>
-        <div class="hero-photo-wrap">
-          <div class="hero-glow"></div>
-          <img class="portrait" src="img/Anshuman.jpg" alt="Anshuman Acharya" />
+
+        <div class="hero-image-wrap">
+          <div class="hero-image-bg"></div>
+
+          <img
+            src="img/Anshuman.jpg"
+            alt="Anshuman Acharya"
+            class="hero-image"
+          />
+
+          <div class="floating-card card-one">
+            <i class="bx bx-data"></i>
+            <span>Data Science</span>
+          </div>
+
+          <div class="floating-card card-two">
+            <i class="bx bx-brain"></i>
+            <span>AI / ML</span>
+          </div>
         </div>
       </section>
 
-      <section id="work" class="wrap section">
+      <!-- =========================
+         FEATURED PROJECT
+    ========================== -->
+
+      <section class="section featured-section">
         <div class="section-head">
-          <span class="eyebrow">PORTFOLIO</span>
-          <h2>Featured Project</h2>
-          <p class="sub">
-            A real-world computer vision project focused on road safety and
-            automated detection.
+          <span class="eyebrow"> FEATURED PROJECT </span>
+
+          <h2>AI-Based Detection of Missing & Damaged Road Markings</h2>
+
+          <p>
+            A computer vision solution designed to detect road markings and
+            identify damaged or missing road conditions using YOLO-based object
+            detection.
           </p>
         </div>
 
         <article class="featured-project">
-          <div class="featured-visual">
-            <img
-              src="img/road-marking-project.png"
-              alt="AI-based road marking detection project"
-              onerror="
-                this.style.display = 'none';
-                this.nextElementSibling.style.display = 'flex';
-              "
-            />
-            <div class="featured-fallback">
-              <i class="bx bx-car"></i><span>Computer Vision</span>
-            </div>
+          <div class="featured-icon">
+            <i class="bx bx-road"></i>
           </div>
+
           <div class="featured-content">
-            <span class="featured-category">AI / ML · Computer Vision</span>
-            <h3>AI-Based Detection of Missing and Damaged Road Markings</h3>
-            <p>
-              Computer-vision system designed to detect missing, faded,
-              misaligned and damaged road markings using YOLO-based object
-              detection.
-            </p>
-            <div class="featured-tags">
-              <span>Python</span><span>YOLOv8</span><span>OpenCV</span
-              ><span>Ultralytics</span><span>Deep Learning</span>
+            <div class="featured-top">
+              <span>AI / ML · COMPUTER VISION</span>
+
+              <span class="featured-status">
+                <i class="bx bx-check-circle"></i>
+                Completed
+              </span>
             </div>
-            <div class="featured-buttons">
-              <a
-                class="btn primary"
-                href="https://github.com/anshux01"
-                target="_blank"
-                rel="noopener"
-                ><i class="bx bxl-github"></i> GitHub</a
-              >
-              <a class="btn" href="#projects-area"
-                >More projects <i class="bx bx-right-arrow-alt"></i
-              ></a>
+
+            <h3>Road Safety Detection System</h3>
+
+            <p>
+              The system uses computer vision and YOLOv8 to detect road markings
+              and road-surface conditions such as potholes and different types
+              of cracks.
+            </p>
+
+            <div class="tech-list">
+              <span>Python</span>
+              <span>YOLOv8</span>
+              <span>OpenCV</span>
+              <span>TensorFlow</span>
+              <span>Computer Vision</span>
+              <span>Machine Learning</span>
             </div>
           </div>
         </article>
       </section>
 
-      <section id="projects-area" class="wrap section compact-section">
+      <!-- =========================
+         PROJECTS
+    ========================== -->
+
+      <section class="section" id="projects">
         <div class="section-head">
-          <span class="eyebrow">MORE WORK</span>
+          <span class="eyebrow"> MORE WORK </span>
+
           <h2>Projects</h2>
-          <p class="sub">
+
+          <p>
             A mix of data analytics, AI/ML, automation and full-stack
             development.
           </p>
         </div>
-        <div class="chips" id="pfilter"></div>
-        <div class="grid" id="projects"></div>
+
+        <div class="filter-wrap" id="pfilter"></div>
+
+        <div id="projects"></div>
       </section>
 
-      <section id="experience" class="wrap section">
+      <!-- =========================
+         EXPERIENCE
+    ========================== -->
+
+      <section class="section" id="experience">
         <div class="section-head">
-          <span class="eyebrow">JOURNEY</span>
-          <h2>Experience & Training</h2>
-          <p class="sub">
-            Hands-on work that complements my academic and project experience.
+          <span class="eyebrow"> MY JOURNEY </span>
+
+          <h2>Experience</h2>
+
+          <p>
+            A combination of professional experience, training and technical
+            leadership.
           </p>
         </div>
-        <div class="experience-grid">
+
+        <div class="timeline">
           <article class="experience-card">
-            <div class="experience-icon"><i class="bx bx-data"></i></div>
-            <div>
-              <span class="eyebrow">PROFESSIONAL EXPERIENCE</span>
-              <h3>Process Associate — Data Annotation & Quality</h3>
-              <p class="experience-meta">Han Digital · Freelance · 2026</p>
-              <ul>
-                <li>
-                  Worked on structured data annotation and quality-review
-                  workflows.
-                </li>
-                <li>
-                  Reviewed and corrected annotation outputs against project
-                  guidelines and schema requirements.
-                </li>
-                <li>
-                  Worked with guardrail and content-classification datasets,
-                  focusing on consistency and quality.
-                </li>
-                <li>
-                  Collaborated with auditing and quality processes while
-                  maintaining target-based production work.
-                </li>
-              </ul>
+            <div class="timeline-dot"></div>
+
+            <div class="experience-date">Jun 2026 – Sep 2026</div>
+
+            <div class="experience-content">
+              <span class="experience-company"> Han Digital Solution </span>
+
+              <h3>Process Associate</h3>
+
+              <span class="experience-location"> Bengaluru </span>
+
+              <p>
+                Worked on AI/ML data annotation and quality-review workflows,
+                including structured content annotation, auditing and quality
+                validation.
+              </p>
             </div>
           </article>
+
           <article class="experience-card">
-            <div class="experience-icon"><i class="bx bx-line-chart"></i></div>
-            <div>
-              <span class="eyebrow">TRAINING</span>
-              <h3>Data Science & AI Program</h3>
-              <p class="experience-meta">360DigiTMG · Hyderabad</p>
-              <ul>
-                <li>
-                  Built practical skills in Python, SQL, statistics, data
-                  analysis and machine learning.
-                </li>
-                <li>
-                  Worked on computer vision, analytics, automation and AI
-                  projects.
-                </li>
-                <li>
-                  Applied data preparation, visualization, model evaluation and
-                  deployment concepts.
-                </li>
-              </ul>
+            <div class="timeline-dot"></div>
+
+            <div class="experience-date">Jun 2025 – Jun 2026</div>
+
+            <div class="experience-content">
+              <span class="experience-company"> 360DigiTMG </span>
+
+              <h3>Data Science & AI Trainee</h3>
+
+              <span class="experience-location"> Hyderabad </span>
+
+              <p>
+                Worked on Python, SQL, data preprocessing, exploratory data
+                analysis, visualization, machine learning and AI projects.
+              </p>
             </div>
           </article>
+
           <article class="experience-card">
-            <div class="experience-icon"><i class="bx bx-code-alt"></i></div>
-            <div>
-              <span class="eyebrow">VOCATIONAL TRAINING</span>
-              <h3>Web Developer Trainee — NALCO</h3>
-              <p class="experience-meta">NALCO · Damanjodi, Odisha · 2024</p>
-              <ul>
-                <li>
-                  Built N Drive, an offline file-storage and file-organization
-                  website.
-                </li>
-                <li>
-                  Worked with HTML, CSS and JavaScript to create a practical
-                  browser interface.
-                </li>
-                <li>
-                  Applied software-development fundamentals in a real training
-                  environment.
-                </li>
-              </ul>
+            <div class="timeline-dot"></div>
+
+            <div class="experience-date">Oct 2024 – Apr 2025</div>
+
+            <div class="experience-content">
+              <span class="experience-company"> GITA Sports Studio </span>
+
+              <h3>eSports Head</h3>
+
+              <span class="experience-location"> Bhubaneswar </span>
+
+              <p>
+                Managed esports activities, coordination, event planning and
+                student participation.
+              </p>
             </div>
           </article>
+
           <article class="experience-card">
-            <div class="experience-icon"><i class="bx bx-game"></i></div>
-            <div>
-              <span class="eyebrow">CAMPUS ROLE</span>
-              <h3>eSports Head — GITA Sports Studio</h3>
-              <p class="experience-meta">GITA · Bhubaneswar · 2024–2025</p>
-              <ul>
-                <li>
-                  Coordinated esports activities and gaming-community
-                  initiatives.
-                </li>
-                <li>
-                  Supported planning, communication and event-management
-                  workflows.
-                </li>
-              </ul>
+            <div class="timeline-dot"></div>
+
+            <div class="experience-date">Jul 2024 – Aug 2024</div>
+
+            <div class="experience-content">
+              <span class="experience-company"> NALCO </span>
+
+              <h3>Web Developer Trainee</h3>
+
+              <span class="experience-location">
+                Damanjodi, Koraput, Odisha
+              </span>
+
+              <p>
+                Developed an offline file-storage and management website during
+                vocational training.
+              </p>
             </div>
           </article>
         </div>
       </section>
 
-      <section id="education" class="wrap section">
+      <!-- =========================
+         EDUCATION
+    ========================== -->
+
+      <section class="section" id="education">
         <div class="section-head">
-          <span class="eyebrow">ACADEMICS</span>
+          <span class="eyebrow"> ACADEMIC BACKGROUND </span>
+
           <h2>Education</h2>
-          <p class="sub">
-            Academic foundation supporting my transition into Data Science and
-            AI.
-          </p>
         </div>
+
         <div class="education-grid">
           <article class="education-card">
-            <div class="education-icon"><i class="bx bx-graduation"></i></div>
+            <div class="education-icon">
+              <i class="bx bxs-graduation"></i>
+            </div>
+
             <div>
-              <span class="eyebrow">2021 — 2025</span>
-              <h3>B.Tech — Computer Science & IT</h3>
+              <span class="education-year"> 2021 – 2025 </span>
+
+              <h3>B.Tech — Computer Science</h3>
+
               <p>
                 Gandhi Institute for Technological Advancements (GITA),
                 Bhubaneswar
               </p>
-              <span class="education-tag">Computer Science · IT</span>
             </div>
           </article>
+
           <article class="education-card">
-            <div class="education-icon"><i class="bx bx-book-open"></i></div>
+            <div class="education-icon">
+              <i class="bx bx-book"></i>
+            </div>
+
             <div>
-              <span class="eyebrow">2019 — 2021</span>
-              <h3>Higher Secondary — Mathematics & Computer Science</h3>
+              <span class="education-year"> 2019 – 2021 </span>
+
+              <h3>Higher Secondary</h3>
+
               <p>Maharshi Gurukul Science Higher Secondary School, Gunupur</p>
-              <span class="education-tag">Mathematics · Computer Science</span>
+
+              <span class="education-stream">
+                Mathematics & Computer Science
+              </span>
             </div>
           </article>
         </div>
       </section>
 
-      <section id="skills" class="wrap section">
+      <!-- =========================
+         SKILLS
+    ========================== -->
+
+      <section class="section" id="skills">
         <div class="section-head">
-          <span class="eyebrow">TOOLKIT</span>
+          <span class="eyebrow"> TOOLKIT </span>
+
           <h2>Skills & Credentials</h2>
-          <p class="sub">
-            A practical toolkit spanning data, AI/ML, development, databases and
-            analytics.
+
+          <p>
+            Technologies and tools I use across data, AI/ML, development and
+            automation.
           </p>
         </div>
-        <div class="chips" id="sfilter"></div>
-        <div class="tags skill-tags" id="skills-list"></div>
-        <h3 class="minor-title">Certificates</h3>
-        <ul class="certs" id="certs"></ul>
+
+        <div class="filter-wrap" id="sfilter"></div>
+
+        <div id="skills-list"></div>
+
+        <div class="credentials-head">
+          <h3>Certificates</h3>
+        </div>
+
+        <div id="certs"></div>
       </section>
 
-      <section id="topics" class="wrap section">
+      <!-- =========================
+         TOPICS
+    ========================== -->
+
+      <section class="section" id="topics">
         <div class="section-head">
-          <span class="eyebrow">LEARN</span>
+          <span class="eyebrow"> KNOWLEDGE </span>
+
           <h2>Data Science & AI Topics</h2>
-          <p class="sub">
-            Useful reading on the areas I work with and continue to learn.
-          </p>
+
+          <p>Concepts I work with and continue to explore.</p>
         </div>
+
         <div class="topics-grid">
           <article class="topic-card">
-            <div class="topic-icon"><i class="bx bx-data"></i></div>
-            <div>
-              <h3>Data Science</h3>
-              <p>
-                Statistics, programming, analytics and machine learning working
-                together to extract useful insights.
-              </p>
-              <a
-                href="https://www.ibm.com/think/topics/data-science/jcr%3Acontent"
-                target="_blank"
-                rel="noopener"
-                >Learn more <i class="bx bx-link-external"></i
-              ></a>
+            <div class="topic-icon">
+              <i class="bx bx-bar-chart-alt-2"></i>
             </div>
+
+            <h3>Data Science</h3>
+
+            <p>
+              Turning raw data into insights using statistics, programming and
+              analytical methods.
+            </p>
+
+            <a
+              href="https://www.ibm.com/think/topics/data-science/jcr%3Acontent"
+              target="_blank"
+              rel="noopener"
+            >
+              Learn more
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
           </article>
+
           <article class="topic-card">
-            <div class="topic-icon"><i class="bx bx-bar-chart-alt-2"></i></div>
-            <div>
-              <h3>Data Analytics & EDA</h3>
-              <p>
-                Explore, clean, summarize and visualize datasets to discover
-                patterns and answer questions.
-              </p>
-              <a
-                href="https://www.ibm.com/think/topics/data-science-vs-data-analytics?hl=en-US"
-                target="_blank"
-                rel="noopener"
-                >Learn more <i class="bx bx-link-external"></i
-              ></a>
+            <div class="topic-icon">
+              <i class="bx bx-line-chart"></i>
             </div>
+
+            <h3>Data Analytics</h3>
+
+            <p>
+              Exploring data, identifying patterns and communicating useful
+              business insights.
+            </p>
+
+            <a
+              href="https://www.ibm.com/think/topics/data-science-vs-data-analytics?hl=en-US"
+              target="_blank"
+              rel="noopener"
+            >
+              Learn more
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
           </article>
+
           <article class="topic-card">
-            <div class="topic-icon"><i class="bx bx-brain"></i></div>
-            <div>
-              <h3>Machine Learning</h3>
-              <p>
-                Models learn patterns from data to support prediction,
-                classification and automation.
-              </p>
-              <a
-                href="https://cloud.google.com/learn/what-is-machine-learning"
-                target="_blank"
-                rel="noopener"
-                >Learn more <i class="bx bx-link-external"></i
-              ></a>
+            <div class="topic-icon">
+              <i class="bx bx-brain"></i>
             </div>
+
+            <h3>Machine Learning</h3>
+
+            <p>
+              Building models that learn patterns from data to support
+              prediction and decision-making.
+            </p>
+
+            <a
+              href="https://cloud.google.com/learn/what-is-machine-learning"
+              target="_blank"
+              rel="noopener"
+            >
+              Learn more
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
           </article>
+
           <article class="topic-card">
-            <div class="topic-icon"><i class="bx bx-camera"></i></div>
-            <div>
-              <h3>Computer Vision</h3>
-              <p>
-                AI techniques for extracting meaningful information from images
-                and video.
-              </p>
-              <a
-                href="https://aws.amazon.com/what-is/computer-vision/"
-                target="_blank"
-                rel="noopener"
-                >Learn more <i class="bx bx-link-external"></i
-              ></a>
+            <div class="topic-icon">
+              <i class="bx bx-camera"></i>
             </div>
+
+            <h3>Computer Vision</h3>
+
+            <p>
+              Working with images and video using computer vision and deep
+              learning techniques.
+            </p>
+
+            <a
+              href="https://aws.amazon.com/what-is/computer-vision//"
+              target="_blank"
+              rel="noopener"
+            >
+              Learn more
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
           </article>
+
           <article class="topic-card">
-            <div class="topic-icon"><i class="bx bx-pie-chart-alt-2"></i></div>
-            <div>
-              <h3>Business Intelligence</h3>
-              <p>
-                Data preparation, reporting and visualization that help
-                communicate actionable business insights.
-              </p>
-              <a
-                href="https://www.ibm.com/think/topics/business-intelligence"
-                target="_blank"
-                rel="noopener"
-                >Learn more <i class="bx bx-link-external"></i
-              ></a>
+            <div class="topic-icon">
+              <i class="bx bx-pie-chart-alt"></i>
             </div>
+
+            <h3>Business Intelligence</h3>
+
+            <p>
+              Creating dashboards and reports that help communicate data-driven
+              insights.
+            </p>
+
+            <a
+              href="https://www.microsoft.com/en-in/power-platform/products/power-bi/topics/business-intelligence/what-is-business-intelligence"
+              target="_blank"
+              rel="noopener"
+            >
+              Learn more
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
           </article>
+
           <article class="topic-card">
-            <div class="topic-icon"><i class="bx bx-check-shield"></i></div>
-            <div>
-              <h3>Data Quality</h3>
-              <p>
-                Accuracy, completeness, consistency and validation are essential
-                for reliable analytics and AI.
-              </p>
-              <a
-                href="https://www.ibm.com/solutions/data-quality"
-                target="_blank"
-                rel="noopener"
-                >Learn more <i class="bx bx-link-external"></i
-              ></a>
+            <div class="topic-icon">
+              <i class="bx bx-check-shield"></i>
             </div>
-          </article>
-          <article class="topic-card">
-            <div class="topic-icon"><i class="bx bx-bot"></i></div>
-            <div>
-              <h3>AI & Data Automation</h3>
-              <p>
-                Using AI and automation to reduce repetitive work and turn data
-                into practical workflows.
-              </p>
-              <a
-                href="https://www.ibm.com/think/topics/artificial-intelligence-business"
-                target="_blank"
-                rel="noopener"
-                >Learn more <i class="bx bx-link-external"></i
-              ></a>
-            </div>
+
+            <h3>Data Quality</h3>
+
+            <p>
+              Understanding how data quality affects analysis, machine learning
+              and model results.
+            </p>
+
+            <a
+              href="https://developers.google.com/machine-learning/guides/data-traps/quality?hl=en"
+              target="_blank"
+              rel="noopener"
+            >
+              Learn more
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
           </article>
         </div>
       </section>
 
-      <section id="about" class="wrap section about-section">
-        <div class="about-copy">
-          <span class="eyebrow">ABOUT ME</span>
-          <h2>From software development to Data Science & AI</h2>
-          <p>
-            I graduated in Computer Science & IT from GITA, Bhubaneswar, and
-            chose to specialize further in practical Data Science and AI. My
-            background combines software development with analytics, machine
-            learning and automation.
-          </p>
-          <p>
-            I enjoy taking a problem from raw data to a usable result: cleaning
-            and exploring datasets, building models, creating dashboards,
-            automating repetitive workflows, or developing a complete
-            application around the solution.
-          </p>
-          <p>
-            My recent work includes an AI-based road-marking detection system,
-            data-analysis projects, OCR automation, real-time web applications
-            and database-driven systems.
-          </p>
-          <a class="link" href="about-details.html"
-            >Read my full story <i class="bx bx-right-arrow-alt"></i
-          ></a>
-        </div>
-        <div class="services">
-          <details open>
-            <summary>
-              <i class="bx bx-data"></i> Data Science & Analytics
-            </summary>
-            <p>
-              Python, Pandas, NumPy, SQL, EDA, data cleaning, visualization and
-              business-focused insights.
-            </p>
-          </details>
-          <details>
-            <summary><i class="bx bx-brain"></i> AI / Machine Learning</summary>
-            <p>
-              Computer vision, YOLO-based object detection, TensorFlow/Keras,
-              OpenCV and model evaluation.
-            </p>
-          </details>
-          <details>
-            <summary>
-              <i class="bx bx-bot"></i> Automation & AI workflows
-            </summary>
-            <p>
-              Python automation, Tesseract OCR, Selenium, n8n and Google APIs
-              for reducing repetitive work.
-            </p>
-          </details>
-          <details>
-            <summary>
-              <i class="bx bx-code-alt"></i> Full-stack development
-            </summary>
-            <p>
-              React, Node.js, Express, MongoDB, MySQL, Socket.IO, REST APIs and
-              responsive interfaces.
-            </p>
-          </details>
-          <details>
-            <summary>
-              <i class="bx bx-bar-chart-alt-2"></i> Business Intelligence
-            </summary>
-            <p>
-              Power BI dashboards, reporting, KPI-focused analysis and clear
-              data presentation.
-            </p>
-          </details>
-        </div>
-      </section>
+      <!-- =========================
+         ABOUT
+    ========================== -->
 
-      <section id="contact" class="wrap section">
+      <section class="section about-section" id="about">
         <div class="section-head">
-          <span class="eyebrow">CONTACT</span>
-          <h2>Let's build something useful</h2>
-          <p class="sub">
-            Open to Data Science, AI/ML, analytics, automation and relevant
-            software opportunities.
+          <span class="eyebrow"> ABOUT ME </span>
+
+          <h2>Building with data and technology.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I'm a B.Tech Computer Science graduate from GITA, Bhubaneswar,
+              with a strong focus on Data Science, Artificial Intelligence and
+              Machine Learning.
+            </p>
+
+            <p>
+              I developed my Data Science and AI skills through practical
+              training at 360DigiTMG, Hyderabad, working with Python, SQL, data
+              preprocessing, exploratory data analysis, visualization, machine
+              learning and Power BI.
+            </p>
+
+            <p>
+              My projects cover computer vision, AI automation, OCR, analytics
+              and full-stack development. I enjoy taking a practical problem and
+              turning it into a working technical solution.
+            </p>
+
+            <p>
+              I have also worked with AI/ML data annotation and quality-review
+              workflows, giving me experience working with structured data and
+              quality validation.
+            </p>
+
+            <a href="about-details.html" class="text-link">
+              More about me
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+          </div>
+
+          <div class="services">
+            <article class="service-card">
+              <i class="bx bx-bar-chart-alt-2"></i>
+
+              <div>
+                <h3>Data Science & Analytics</h3>
+                <p>
+                  Python, SQL, EDA, visualization and data-driven reporting.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="bx bx-brain"></i>
+
+              <div>
+                <h3>AI / ML</h3>
+                <p>
+                  Machine learning, deep learning, computer vision and YOLO.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="bx bx-bot"></i>
+
+              <div>
+                <h3>Automation & AI Workflows</h3>
+                <p>OCR, n8n, APIs and workflow automation.</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="bx bx-code-alt"></i>
+
+              <div>
+                <h3>Full-Stack Development</h3>
+                <p>React, Node.js, Express, MongoDB and REST APIs.</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="bx bx-pie-chart-alt-2"></i>
+
+              <div>
+                <h3>Business Intelligence</h3>
+                <p>Power BI dashboards, reporting and data visualization.</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="bx bx-check-shield"></i>
+
+              <div>
+                <h3>Data Quality & Annotation</h3>
+                <p>AI/ML annotation, auditing and quality-review workflows.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+         CONTACT
+    ========================== -->
+
+      <section class="section contact-section" id="contact">
+        <div class="section-head">
+          <span class="eyebrow"> GET IN TOUCH </span>
+
+          <h2>Let's build something useful.</h2>
+
+          <p>
+            Have an opportunity, project or collaboration in mind? Feel free to
+            reach out.
           </p>
         </div>
+
         <div class="contact-grid">
+          <div class="contact-info">
+            <a href="mailto:anshuman.acharyaa@gmail.com" class="contact-item">
+              <span class="contact-icon">
+                <i class="bx bx-envelope"></i>
+              </span>
+
+              <div>
+                <small>Email</small>
+                <strong> anshuman.acharyaa@gmail.com </strong>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/anshux01"
+              target="_blank"
+              rel="noopener"
+              class="contact-item"
+            >
+              <span class="contact-icon">
+                <i class="bx bxl-github"></i>
+              </span>
+
+              <div>
+                <small>GitHub</small>
+                <strong> github.com/anshux01 </strong>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/anshuman-a-acharya/"
+              target="_blank"
+              rel="noopener"
+              class="contact-item"
+            >
+              <span class="contact-icon">
+                <i class="bx bxl-linkedin"></i>
+              </span>
+
+              <div>
+                <small>LinkedIn</small>
+                <strong> linkedin.com/in/anshuman-a-acharya </strong>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/ans_hu_x/"
+              target="_blank"
+              rel="noopener"
+              class="contact-item"
+            >
+              <span class="contact-icon">
+                <i class="bx bxl-instagram"></i>
+              </span>
+
+              <div>
+                <small>Instagram</small>
+                <strong> @ans_hu_x </strong>
+              </div>
+            </a>
+          </div>
+
           <form
             class="contact-form"
             action="https://formsubmit.co/anshuman.acharyaa@gmail.com"
@@ -525,61 +738,110 @@
               name="_subject"
               value="Portfolio contact — Anshuman Acharya"
             />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://anshux01.github.io/Anshuman-Acharya/"
+            />
+
             <input type="hidden" name="_captcha" value="false" />
-            <label
-              >Name<input name="name" placeholder="Your name" required
-            /></label>
-            <label
-              >Email<input
-                type="email"
-                name="email"
-                placeholder="your@email.com"
-                required
-            /></label>
-            <label
-              >Message<textarea
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name"> Name </label>
+
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email"> Email </label>
+
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message"> Message </label>
+
+              <textarea
+                id="message"
                 name="message"
                 rows="6"
-                placeholder="Tell me about the opportunity or project..."
+                placeholder="Tell me about your opportunity or project..."
                 required
               ></textarea>
-            </label>
-            <button class="btn primary" type="submit">
-              Send message <i class="bx bx-send"></i>
+            </div>
+
+            <button type="submit" class="btn primary submit-btn">
+              Send Message
+              <i class="bx bx-send"></i>
             </button>
           </form>
-          <div class="reach">
-            <h3>Reach me</h3>
-            <p>For opportunities, collaborations or project discussions.</p>
-            <a href="mailto:anshuman.acharyaa@gmail.com"
-              ><i class="bx bx-envelope"></i
-              ><span>anshuman.acharyaa@gmail.com</span></a
-            >
-            <a href="https://github.com/anshux01" target="_blank" rel="noopener"
-              ><i class="bx bxl-github"></i><span>GitHub</span></a
-            >
-            <a
-              href="https://www.linkedin.com/in/anshuman-a-acharya/"
-              target="_blank"
-              rel="noopener"
-              ><i class="bx bxl-linkedin"></i><span>LinkedIn</span></a
-            >
-            <a
-              href="https://www.instagram.com/ans_hu_x/"
-              target="_blank"
-              rel="noopener"
-              ><i class="bx bxl-instagram"></i><span>Instagram</span></a
-            >
-          </div>
         </div>
       </section>
     </main>
 
-    <footer class="wrap footer">
-      <span>© 2026 Anshuman Acharya</span
-      ><span>Data Science · AI/ML · Automation · Full-Stack</span
-      ><a href="#home">Back to top <i class="bx bx-up-arrow-alt"></i></a>
+    <!-- =========================
+       FOOTER
+  ========================== -->
+
+    <footer class="footer">
+      <div>
+        <strong> Anshuman Acharya </strong>
+
+        <span> Data Science · AI/ML · Development </span>
+      </div>
+
+      <p>Developed by Anshuman Acharya with 360DigiTMG</p>
+
+      <div class="footer-socials">
+        <a
+          href="https://github.com/anshux01"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+        >
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/anshuman-a-acharya/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <i class="bx bxl-linkedin"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/ans_hu_x/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+      </div>
     </footer>
+
+    <div class="copyright">
+      © <span id="year"></span> Anshuman Acharya. All rights reserved.
+    </div>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
